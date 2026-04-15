@@ -32,6 +32,14 @@ body {
     overflow: hidden;
 }
 
+.hilang {
+    opacity: 0;
+}
+
+.smooth {
+    transition: all 1s ease;
+}
+
 .hamburger {
     position: absolute;
     right: 2.5rem;
@@ -153,6 +161,62 @@ body {
     color: var(--warna-hitung);
 }
 
+/* portal */
+.portal {
+    position: absolute;
+    width: 478px;
+    height: 478px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 999;
+    translate: -15px;
+    transition: all 1s ease;
+}
+
+#portal {
+    animation: sinar 2s ease-in-out infinite alternate;
+}
+
+.windah-animasi {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    inset: 0;
+    margin: auto;
+    z-index: 1000;
+    translate: -1000px;
+    animation: lempar 2s ease-in-out forwards;
+}
+
+@keyframes sinar {
+    0% {
+        filter: brightness(2);
+        transform: translateY(0) rotate(180deg);
+    }
+
+    50% {
+        filter: brightness(3);
+        nsform: translateY(10px) rotate(180deg);
+    }
+
+    100% {
+        filter: brightness(2);
+        transform: translateY(0) rotate(180deg);
+    }
+}
+
+@keyframes lempar {
+    from {
+        translate: -1000px;
+    }
+
+    to {
+        translate: 0px;
+    }
+}
+
 /* selesai */
 .selesai {
     display: none;
@@ -195,18 +259,6 @@ body {
     align-items: center;
     height: 77vh;
     background-color: var(--background-color2);
-    position: relative;
-}
-
-.power {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    opacity: 0;
-}
-
-.power p {
-    white-space: nowrap;
 }
 
 .mode {
@@ -416,23 +468,23 @@ body {
     color: var(--warna-hitam-dasar);
 }
 
-.box {
-    position: relative;
+.windah {
+    position: absolute;
+    inset: 0;
+    margin: auto;
     height: 100px;
     width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: all 0.3s ease;
     user-select: none;
     cursor: pointer;
+    z-index: 999;
 }
 
-.box:hover {
+.windah:hover {
     scale: 1.2;
 }
 
-.box:active {
+.windah:active {
     transform: scale(0.7);
 }
 

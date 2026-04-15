@@ -1,4 +1,4 @@
-let box = document.querySelector(`.box`);
+let windah = document.querySelector(`.windah`);
 let hitung = document.querySelector(`#hitung`);
 let ara = new Audio(`ara-ara-windah-basudara.mp3`);
 let lagu = new Audio(`low-cortisol-song.mp3`);
@@ -50,8 +50,8 @@ function pindah() {
     let lebarLayar = game.clientWidth;
     let tinggiLayar = game.clientHeight;
 
-    let lebarBox = box.offsetWidth;
-    let tinggiBox = box.offsetHeight;
+    let lebarBox = windah.offsetWidth;
+    let tinggiBox = windah.offsetHeight;
 
     let xMax = (lebarLayar - lebarBox) / 2;
     let yMax = (tinggiLayar - tinggiBox) / 2;
@@ -63,7 +63,7 @@ function pindah() {
     ara.play();
     ara.volume = 1;
 
-    box.style.translate = `${x}px ${y}px`;
+    windah.style.translate = `${x}px ${y}px`;
     z++
 
     text.style.animation = `none`;
@@ -74,5 +74,5 @@ function pindah() {
     game.style.height = `89vh`;
 }
 
-box.addEventListener(`click`, pindah);
+windah.addEventListener(`click`, pindah);
 lagu.addEventListener(`ended`, backsound);
