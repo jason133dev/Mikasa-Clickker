@@ -45,10 +45,17 @@
 
         <!-- game -->
         <section class="game">
-            <div class="mode">
-                <select name="mode" id="mode">
-                    <option value="">Challage</option>
-                </select>
+            <div class="mode"> <!-- rencana ganti jadi fitur live command -->
+                <div class="pilihan">
+                    <h4>Story Mode</h4>
+                </div>                
+                <button class="select" type="button">Select</button>
+            </div>
+
+            <div class="mode-2">
+                <div class="panah">⌄</div>
+                <button class="btn-mode aktif" id="btn-mode1" type="button">Story Mode</button>
+                <button class="btn-mode pasif" id="btn-mode2" type="button">Zen Mode</button>
             </div>
 
             <div class="leaderboard">
@@ -101,6 +108,7 @@
     </div>
 
     <script src="main.js"></script>
+    <script src="logic tampilan game.js"></script>
 </body>
 
 </html>

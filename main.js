@@ -44,6 +44,7 @@ function backsound() {
 function pindah() {
     lagu.play();
     lagu.volume = 0.2;
+    timerText.style.display = `block`;
     mulaiTimer();
 
     let lebarLayar = game.clientWidth;
