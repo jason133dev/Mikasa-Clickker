@@ -6,22 +6,32 @@ let selesai = document.querySelector(`.selesai`);
 let game = document.querySelector(`.game`);
 let portal = document.querySelector(`.portal`);
 let windahAnimasi = document.querySelector(`.windah-animasi`);
+let windah = document.querySelector(`.windah`);
 
 // animasi masuk
 let UI = [panah, btn, hamburger, text, selesai, game];
+UI.forEach(el => el.style.pointerEvents = `none`);
+
+windah.style.pointerEvents = `none`;
+
+setTimeout(() => {
+    portal.classList.remove('hilang');
+}, 1000);
 
 setTimeout(() => {
    UI.forEach(el => el.classList.remove('hilang'));
-}, 3000);
+}, 4500);
 
 setTimeout(() => {
    UI.forEach(el => el.classList.remove('smooth'));
-}, 4000);
+   UI.forEach(el => el.style.pointerEvents = `all`);
+   windah.style.pointerEvents = `all`;
+}, 5000);
 
 setTimeout(() => {
-    portal.classList.add(`hilang`);
     windahAnimasi.classList.add(`hilang`);
-}, 5000);
+    portal.classList.add(`hilang`);    
+}, 5100);
 
 // animasi panah
 btn.addEventListener(`mouseover`, () => {

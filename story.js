@@ -1226,6 +1226,7 @@ function main(n) {
             typingAwal(dataText);
 
             awal.style.animation = `blink .5s ease infinite alternate`;
+            button.style.display = `block`;
         }, 5000);
 
         setTimeout(() => {
