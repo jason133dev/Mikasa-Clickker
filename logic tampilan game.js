@@ -1,5 +1,6 @@
 let panah = document.querySelector(`.panah`);
-let btn = document.querySelector(`.btn-mode`);
+let btn1 = document.querySelector(`#btn-mode1`);
+let btn2 = document.querySelector(`#btn-mode2`);
 let hamburger = document.querySelector(`.hamburger`);
 let text = document.querySelector(`.text`);
 let selesai = document.querySelector(`.selesai`);
@@ -10,7 +11,7 @@ let windah = document.querySelector(`.windah`);
 let body = document.querySelector(`body`);
 
 // animasi masuk
-let UI = [panah, btn, hamburger, text, selesai, game];
+let UI = [panah, btn1, btn2, hamburger, text, selesai, game];
 UI.forEach(el => el.style.pointerEvents = `none`);
 
 windah.style.pointerEvents = `none`;
@@ -37,10 +38,10 @@ setTimeout(() => {
 }, 5100);
 
 // animasi panah
-btn.addEventListener(`mouseover`, () => {
+btn1.addEventListener(`mouseover`, () => {
     panah.style.display = `flex`;
 })
 
-btn.addEventListener(`mouseout`, () => {
+btn1.addEventListener(`mouseout`, () => {
     panah.style.display = `none`;
 })
