@@ -27,9 +27,16 @@
     -webkit-user-drag: none;
 }
 
+html {
+    background-color: black;
+}
+
 body {
-    background-color: var(--background-color2);
     overflow: hidden;
+    background-color: rgb(78, 123, 132);
+    box-shadow: 0px 0px 157px -13px rgba(0, 0, 0, 0.75) inset;
+    -webkit-box-shadow: 0px 0px 157px -13px rgba(0, 0, 0, 0.75) inset;
+    -moz-box-shadow: 0px 0px 157px -13px rgba(0, 0, 0, 0.75) inset;
 }
 
 .hilang {
@@ -130,7 +137,6 @@ body {
     padding-top: 2em;
     padding-bottom: 0.5em;
     color: var(--warna-hitam-dasar);
-    background-color: var(--background-color2);
     transition: all 0.5s ease;
     user-select: none;
     -webkit-user-drag: none;
@@ -187,24 +193,24 @@ body {
     height: 100px;
     inset: 0;
     margin: auto;
-    z-index: 5;
+    z-index: 1000;
     translate: 0px;
     animation: lempar 4s ease-in-out forwards;
 }
 
 @keyframes sinar {
     0% {
-        filter: brightness(2);
+        filter: brightness(1).5;
         transform: translateY(0) rotate(180deg);
     }
 
     50% {
-        filter: brightness(3);
+        filter: brightness(2);
         nsform: translateY(10px) rotate(180deg);
     }
 
     100% {
-        filter: brightness(2);
+        filter: brightness(1.5);
         transform: translateY(0) rotate(180deg);
     }
 }
@@ -226,7 +232,7 @@ body {
         transform: translate(0) scale(1) rotate(0deg) skew(0deg);
         filter: blur(0px) brightness(1);
         opacity: 1;
-    } 
+    }
 }
 
 /* selesai */
@@ -270,7 +276,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 77vh;
-    background-color: var(--background-color2);
 }
 
 .mode-2 {
@@ -307,11 +312,11 @@ body {
     font-size: 2rem;
     border-radius: .5rem;
     color: var(--background-color);
-    background-color: rgb(226, 107, 107);
-    border-left: 3px solid rgb(246, 132, 132);
-    border-top: 3px solid rgb(246, 132, 132);
-    border-right: 3px solid rgb(102, 51, 51);
-    border-bottom: 3px solid rgb(102, 51, 51);
+    background-color: rgb(94, 168, 185);
+    border-left: 3px solid rgb(137, 210, 227);
+    border-top: 3px solid rgb(137, 210, 227);
+    border-right: 3px solid rgb(61, 123, 137);
+    border-bottom: 3px solid rgb(61, 123, 137);
     cursor: pointer;
     outline: 2px solid var(--warna-hitam-dasar);
     transition: all 0.2s ease;

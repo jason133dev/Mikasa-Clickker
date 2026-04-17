@@ -7,6 +7,7 @@ let game = document.querySelector(`.game`);
 let portal = document.querySelector(`.portal`);
 let windahAnimasi = document.querySelector(`.windah-animasi`);
 let windah = document.querySelector(`.windah`);
+let body = document.querySelector(`body`);
 
 // animasi masuk
 let UI = [panah, btn, hamburger, text, selesai, game];
@@ -20,17 +21,19 @@ setTimeout(() => {
 
 setTimeout(() => {
    UI.forEach(el => el.classList.remove('hilang'));
+   body.style.backgroundColor = `rgb(122, 191, 205)`;
 }, 4500);
 
 setTimeout(() => {
    UI.forEach(el => el.classList.remove('smooth'));
    UI.forEach(el => el.style.pointerEvents = `all`);
+   windahAnimasi.classList.add(`hilang`);
    windah.style.pointerEvents = `all`;
 }, 5000);
 
 setTimeout(() => {
-    windahAnimasi.classList.add(`hilang`);
-    portal.classList.add(`hilang`);    
+    portal.classList.add(`hilang`);
+    windahAnimasi.style.pointerEvents = `none`;
 }, 5100);
 
 // animasi panah
