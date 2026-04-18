@@ -14,9 +14,11 @@
 * Integrasi **Secret Code** via "Inspect Element" saat `.persen = 100%`.
 
 
+
 ### [FE] UI/UX Improvements
 * **Smooth Transitions:** Ganti warna background saat *Timer Mode* dengan transisi halus.
 * **Leaderboard:** Animasi `translate` saat muncul harus dibuat *smooth*.
+
 
 
 ### [BE] Backend
