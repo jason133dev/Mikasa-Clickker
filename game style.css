@@ -326,6 +326,52 @@ body {
     z-index: -0;
 }
 
+@keyframes getar-tipis {
+    0% {
+        transform: translate(0.5px, 0.5px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-0.5px, -0.5px) rotate(-0.1deg);
+    }
+
+    20% {
+        transform: translate(-0.8px, 0px) rotate(0.1deg);
+    }
+
+    30% {
+        transform: translate(0.8px, 0.5px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(0.5px, -0.5px) rotate(0.1deg);
+    }
+
+    50% {
+        transform: translate(-0.5px, 0.8px) rotate(-0.1deg);
+    }
+
+    60% {
+        transform: translate(-0.8px, 0.3px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(0.8px, 0.3px) rotate(-0.1deg);
+    }
+
+    80% {
+        transform: translate(-0.5px, -0.5px) rotate(0.1deg);
+    }
+
+    90% {
+        transform: translate(0.5px, 0.8px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(0.5px, -0.5px) rotate(-0.1deg);
+    }
+}
+
 /* game */
 .game {
     display: flex;

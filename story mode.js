@@ -55,6 +55,11 @@ function pindah() {
         barInner.classList.remove(`hilang`);
         barShadow.classList.remove(`hilang`);
     }, 800);
+
+    bar.style.animation = `getar-tipis .5s ease`;
+    setTimeout(() => {
+        bar.style.animation = `none`;
+    }, 500);
 }
 
 windah.addEventListener(`click`, pindah);
