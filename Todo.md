@@ -8,14 +8,14 @@
 
 # Backlog
 
-### 🎮 Gameplay Logic
+### [LOGIC] Gameplay Logic
 * Setiap `.persen` tertentu, munculkan **Special Scene**.
   * *Note: Jika salah keputusan, set `.persen = 0%`*
 * Integrasi **Secret Code** via "Inspect Element" saat `.persen = 100%`.
 
-### 🎨 UI/UX Improvements
+### [FE] UI/UX Improvements
 * **Smooth Transitions:** Ganti warna background saat *Timer Mode* dengan transisi halus.
 * **Leaderboard:** Animasi `translate` saat muncul harus dibuat *smooth*.
 
-### 💾 Backend
+### [BE] Backend
 * Simpan data hasil klik *Timer Mode* ke database **SQL**.
