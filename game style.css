@@ -270,6 +270,62 @@ body {
     background-color: yellow;
 }
 
+/* bar */
+.bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    translate: 0 30px;
+    width: 500px;
+    height: 20px;
+    margin: auto;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bar-status {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    translate: 0px 2px;
+    width: 500px;
+    height: 20px;
+    text-align: center;
+    color: var(--warna-hitam-dasar);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.bar-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    translate: -100% 1px;
+    width: 492px;
+    height: 12px;
+    margin: auto;
+    transition: all 2s ease;
+    z-index: -999;
+}
+
+.bar-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    translate: 0 34px;
+    width: 492px;
+    height: 12px;
+    margin: auto;
+    background-color: rgba(255, 222, 35, 0.39);
+    box-shadow: 0px 0px 41px 0px rgba(255, 215, 0, 0.76);
+    -webkit-box-shadow: 0px 0px 41px 0px rgba(255, 215, 0, 0.76);
+    -moz-box-shadow: 0px 0px 41px 0px rgba(255, 215, 0, 0.76);
+    z-index: -0;
+}
+
 /* game */
 .game {
     display: flex;

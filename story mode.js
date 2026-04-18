@@ -11,8 +11,17 @@ let selesai = document.querySelector(`.selesai`);
 let portal = document.querySelector(`.portal`);
 let windahAnimasi = document.querySelector(`.windah-animasi`);
 let body = document.querySelector(`body`);
+let leaderboard = document.querySelector(`.leaderboard`);
+let bar = document.querySelector(`.bar`);
+let barInner = document.querySelector(`.bar-inner`);
+let barStatus = document.querySelector(`.bar-status`);
+let barShadow = document.querySelector(`.bar-shadow`);
+
+let klik = 0;
+let persen = 0;
 
 function pindah() {
+    // logic pindah
     let lebarLayar = game.clientWidth;
     let tinggiLayar = game.clientHeight;
 
@@ -26,11 +35,26 @@ function pindah() {
     let y = Math.floor(Math.random() * (yMax * 2)) - yMax;
     windah.style.translate = `${x}px ${y}px`;
 
-    let UI = [panah, btn1, btn2, hamburger, text, selesai];
+    // logic persen
+    klik++;
+    let rumus = Math.sqrt(klik);
+    persen = Math.min(rumus, 100);
+
+    barStatus.innerHTML = persen.toFixed(1) + `%`;
+
+    let posisiBarInner =  persen - 100;
+    barInner.style.translate = `${posisiBarInner}% 1px`;
+
+    // logic tampilan
+    let UI = [panah, btn1, btn2, hamburger, text, selesai, leaderboard];
     UI.forEach(el => el.classList.add(`hilang`));
-    text.style.animation = `none`;
-    logo.style.display = `none`;
     game.style.height = `89vh`;
+
+    setTimeout(() => {
+        bar.classList.remove(`hilang`);
+        barInner.classList.remove(`hilang`);
+        barShadow.classList.remove(`hilang`);
+    }, 800);
 }
 
 windah.addEventListener(`click`, pindah);
