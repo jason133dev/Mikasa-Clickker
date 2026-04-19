@@ -45,8 +45,8 @@ function trailAnimation() {
         t.y = y;
 
         let nextTrail = trail[index + 1] || trail[0];
-        x += (nextTrail.x - x) * 0.15;
-        y += (nextTrail.y - y) * 0.15;
+        x += (nextTrail.x - x) * 0.3;
+        y += (nextTrail.y - y) * 0.3;
     });
 
     requestAnimationFrame(trailAnimation);
