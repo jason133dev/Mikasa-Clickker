@@ -2,15 +2,14 @@
 ## 19-04-2026
 
 - [ ] Membuat white motion trail untuk karakter **Mikasa/Windah**
-- [ ] Tambahkan animasi `blink2` di `.bar-shadow`
+- [x] Tambahkan animasi `blink2` di `.bar-shadow`
 
 ---
 
 # Backlog
 
 ### [LOGIC] Gameplay Logic
-* Setiap `.persen` tertentu, munculkan **Special Scene**.
-  * *Note: Jika salah keputusan, set `.persen = 0%`*
+* Setiap `.persen` tertentu, munculkan **Special Scene**. Jika salah keputusan, set `.persen = 0%`.
 * Integrasi **Secret Code** via "Inspect Element" saat `.persen = 100%`.
 
 

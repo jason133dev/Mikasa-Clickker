@@ -20,7 +20,22 @@ let barShadow = document.querySelector(`.bar-shadow`);
 let klik = 0;
 let persen = 0;
 
+// trail
+let coords = {x: 0, y: 0};
+let trail = document.querySelectorAll(`.trail`);
+
+window.addEventListener('mousemove', (e) => {
+    coords.x = e.clientX
+    coords.y = e.clientY
+    
+    
+
+    console.log(coords)
+});
+
 function pindah() {
+
+
     // logic pindah
     let lebarLayar = game.clientWidth;
     let tinggiLayar = game.clientHeight;
@@ -42,7 +57,7 @@ function pindah() {
 
     barStatus.innerHTML = persen.toFixed(1) + `%`;
 
-    let posisiBarInner =  persen - 100;
+    let posisiBarInner = persen - 100;
     barInner.style.translate = `${posisiBarInner}% 1px`;
 
     // logic tampilan
