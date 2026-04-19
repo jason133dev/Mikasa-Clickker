@@ -8,7 +8,7 @@
 
 ## 20-04-2026
 
-- [ ] Belajar HTML5 Canvas
+- [ ] Setiap `.persen` tertentu, munculkan **Special Scene**. Jika salah keputusan, set `.persen = 0%`
 - [ ] Membuat white motion trail untuk **windah**
 
 ---
@@ -16,7 +16,6 @@
 # Backlog
 
 ### [LOGIC] Gameplay Logic
-* Setiap `.persen` tertentu, munculkan **Special Scene**. Jika salah keputusan, set `.persen = 0%`.
 * Integrasi **Secret Code** via "Inspect Element" saat `.persen = 100%`.
 
 
