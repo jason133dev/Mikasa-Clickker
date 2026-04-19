@@ -1,8 +1,8 @@
 # Daily To Do List
 ## 19-04-2026
 
-- [ ] Membuat white motion trail untuk karakter **Mikasa/Windah**
-- [x] Tambahkan animasi `blink2` di `.bar-shadow`
+- [x] Membuat white motion trail untuk **cursor**
+- [x] Tambahkan animasi `blink2` di `.bar-shadow` 
 
 ---
 
