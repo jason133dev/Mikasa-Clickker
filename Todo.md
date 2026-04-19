@@ -6,6 +6,13 @@
 
 ---
 
+## 20-04-2026
+
+- [ ] Belajar HTML5 Canvas
+- [ ] Membuat white motion trail untuk **windah**
+
+---
+
 # Backlog
 
 ### [LOGIC] Gameplay Logic
