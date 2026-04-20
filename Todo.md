@@ -16,6 +16,12 @@
 
 ---
 
+## 21-04-2026
+
+- [ ] Selesaikan semua masalah responsif (@media untuk ukuran ukuran di inspect)
+
+---
+
 # Backlog
 
 ### [LOGIC] Gameplay Logic
