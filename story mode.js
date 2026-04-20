@@ -7,7 +7,6 @@ let panah = document.querySelector(`.panah`);
 let btn1 = document.querySelector(`#btn-mode1`);
 let btn2 = document.querySelector(`#btn-mode2`);
 let hamburger = document.querySelector(`.hamburger`);
-let selesai = document.querySelector(`.selesai`);
 let portal = document.querySelector(`.portal`);
 let windahAnimasi = document.querySelector(`.windah-animasi`);
 let body = document.querySelector(`body`);
@@ -31,6 +30,10 @@ trail.forEach((t) => {
 window.addEventListener('mousemove', (e) => {
     coords.x = e.clientX
     coords.y = e.clientY
+
+    trail.forEach((t) => {
+        t.classList.remove(`hilang`);
+    })
 });
 
 function trailAnimation() {
@@ -65,9 +68,28 @@ function pindah() {
     let xMax = (lebarLayar - lebarBox) / 2;
     let yMax = (tinggiLayar - tinggiBox) / 2;
 
-    let x = Math.floor(Math.random() * (xMax * 2)) - xMax;
-    let y = Math.floor(Math.random() * (yMax * 2)) - yMax;
-    windah.style.translate = `${x}px ${y}px`;
+    let xwindah = Math.floor(Math.random() * (xMax * 2)) - xMax;
+    let ywindah = Math.floor(Math.random() * (yMax * 2)) - yMax;
+    windah.style.translate = `${xwindah}px ${ywindah}px`;
+
+    // trail windah
+    let coords2 = { x: 0, y: 0 };
+    let trailWindah = document.querySelectorAll(`.trail-windah`);
+
+    coords2.x = xwindah;
+    coords2.y = ywindah;
+
+    let x = coords2.x;
+    let y = coords2.y;
+
+    trailWindah.forEach((t, index) => {
+        setTimeout(() => {
+            t.style.translate = `${xwindah}px ${ywindah}px`;
+
+            let scaleValue = (trailWindah.length - index) / trailWindah.length;
+            t.style.scale = scaleValue;
+        }, (index + 1) * 20);
+    });
 
     // logic persen
     klik++;
@@ -77,23 +99,31 @@ function pindah() {
     barStatus.innerHTML = persen.toFixed(1) + `%`;
 
     let posisiBarInner = persen - 100;
-    barInner.style.translate = `${posisiBarInner}% 1px`;
+    barInner.style.translate = `${posisiBarInner}% -2px`;
 
     // logic tampilan
-    let UI = [panah, btn1, btn2, hamburger, text, selesai, leaderboard];
+    let UI = [panah, btn1, btn2, hamburger, text, leaderboard];
     UI.forEach(el => el.classList.add(`hilang`));
+    trailWindah.forEach((e) => {e.classList.remove(`hilang`)});
     game.style.height = `89vh`;
 
     setTimeout(() => {
         bar.classList.remove(`hilang`);
         barInner.classList.remove(`hilang`);
         barShadow.classList.remove(`hilang`);
+        UI.forEach(el => el.style.display = `none`);
+        portal.style.display = `none`;
     }, 800);
 
     bar.style.animation = `getar-tipis .5s ease`;
     setTimeout(() => {
         bar.style.animation = `none`;
     }, 500);
+
+    barShadow.style.boxShadow = `0px 0px 41px 0px rgba(255, 217, 0, 0.83)`;
+    setTimeout(() => {
+        barShadow.style.boxShadow = `none`;
+    }, 400);
 }
 
 windah.addEventListener(`click`, pindah);
