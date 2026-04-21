@@ -15,6 +15,7 @@ let bar = document.querySelector(`.bar`);
 let barInner = document.querySelector(`.bar-inner`);
 let barStatus = document.querySelector(`.bar-status`);
 let barShadow = document.querySelector(`.bar-shadow`);
+let pause = document.querySelector(`.pause`);
 
 let klik = 0;
 let persen = 0;
@@ -113,6 +114,7 @@ function pindah() {
         barShadow.classList.remove(`hilang`);
         UI.forEach(el => el.style.display = `none`);
         portal.style.display = `none`;
+        pause.classList.remove(`hilang`);
     }, 800);
 
     bar.style.animation = `getar-tipis .5s ease`;

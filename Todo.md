@@ -18,7 +18,16 @@
 
 ## 21-04-2026
 
-- [ ] Selesaikan semua masalah responsif (@media untuk ukuran ukuran di inspect)
+- [x] Selesaikan semua masalah responsif (@media untuk ukuran ukuran di inspect)
+- [x] (Tambaham) Buat pause menu
+- [x] (Tambahan) Buat tombol pause
+
+---
+
+## 22-04-2026
+
+- [ ] Buat sistem pause game
+- [ ] Buat `.pause-menu` menjadi responsif
 
 ---
 

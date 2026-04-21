@@ -49,6 +49,7 @@ body {
     transition: all 1s ease;
 }
 
+/* hamburger */
 .hamburger {
     position: absolute;
     top: 0;
@@ -66,7 +67,6 @@ body {
     border-top: 3px solid rgb(202, 237, 245);
     border-right: 3px solid gray;
     border-bottom: 3px solid gray;
-    cursor: pointer;
     outline: 2px solid var(--warna-hitam-dasar);
     transition: all 0.2s ease;
 }
@@ -101,11 +101,198 @@ body {
     background-color: #edefef;
 }
 
+.pause {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: auto;
+    padding: 1px 2px;
+    translate: -50px 40px;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(158, 185, 191);
+    border-left: 3px solid rgb(202, 237, 245);
+    border-top: 3px solid rgb(202, 237, 245);
+    border-right: 3px solid gray;
+    border-bottom: 3px solid gray;
+    outline: 2px solid var(--warna-hitam-dasar);
+    transition: all 0.2s ease;
+}
+
+.pause:hover {
+    transform: translateY(-2px);
+    color: #edefef;
+    background-color: rgb(94, 168, 185);
+    border-left: 3px solid rgb(142, 198, 211);
+    border-top: 3px solid rgb(142, 198, 211);
+    border-right: 3px solid rgb(59, 106, 116);
+    border-bottom: 3px solid rgb(59, 106, 116);
+}
+
+.pause:active {
+    transform: translateY(4px);
+    border-left: 3px solid rgb(59, 106, 116);
+    border-top: 3px solid rgb(59, 106, 116);
+    border-right: 3px solid rgb(142, 198, 211);
+    border-bottom: 3px solid rgb(142, 198, 211);
+}
+
+.pause span {
+    display: block;
+    width: 7.5px;
+    height: 20px;
+    margin: 2px;
+    background-color: var(--warna-hamburger);
+}
+
+.pause:hover span {
+    background-color: #edefef;
+}
+
+.pause-menu {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    background-color: rgb(104, 162, 173);
+    z-index: 1000;
+}
+
+.pause-menu h1 {
+    width: 100%;
+    color: var(--warna-hitam-dasar);
+    background-color: rgb(86, 135, 145);
+}
+
+.container-pause-el {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 212px;
+    margin: auto;
+    background-color: rgb(104, 162, 173);
+}
+
+.pause-menu img {
+    width: 50px;
+    height: 50px;
+}
+
+.home {
+    padding: 5px 5px;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(158, 185, 191);
+    border-left: 3px solid rgb(202, 237, 245);
+    border-top: 3px solid rgb(202, 237, 245);
+    border-right: 3px solid gray;
+    border-bottom: 3px solid gray;
+    outline: 2px solid var(--warna-hitam-dasar);
+    transition: all 0.2s ease;
+}
+
+.home:hover {
+    transform: translateY(-2px);
+    color: #edefef;
+    background-color: rgb(94, 168, 185);
+    border-left: 3px solid rgb(142, 198, 211);
+    border-top: 3px solid rgb(142, 198, 211);
+    border-right: 3px solid rgb(59, 106, 116);
+    border-bottom: 3px solid rgb(59, 106, 116);
+}
+
+.home:active {
+    transform: translateY(4px);
+    border-left: 3px solid rgb(59, 106, 116);
+    border-top: 3px solid rgb(59, 106, 116);
+    border-right: 3px solid rgb(142, 198, 211);
+    border-bottom: 3px solid rgb(142, 198, 211);
+}
+
+.home:hover img {
+    filter: brightness(1000%);
+}
+
+.play {
+    padding: 5px 5px;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(158, 185, 191);
+    border-left: 3px solid rgb(202, 237, 245);
+    border-top: 3px solid rgb(202, 237, 245);
+    border-right: 3px solid gray;
+    border-bottom: 3px solid gray;
+    outline: 2px solid var(--warna-hitam-dasar);
+    transition: all 0.2s ease;
+}
+
+.play:hover {
+    transform: translateY(-2px);
+    color: #edefef;
+    background-color: rgb(94, 168, 185);
+    border-left: 3px solid rgb(142, 198, 211);
+    border-top: 3px solid rgb(142, 198, 211);
+    border-right: 3px solid rgb(59, 106, 116);
+    border-bottom: 3px solid rgb(59, 106, 116);
+}
+
+.play:active {
+    transform: translateY(4px);
+    border-left: 3px solid rgb(59, 106, 116);
+    border-top: 3px solid rgb(59, 106, 116);
+    border-right: 3px solid rgb(142, 198, 211);
+    border-bottom: 3px solid rgb(142, 198, 211);
+}
+
+.play:hover img {
+    filter: brightness(1000%);
+}
+
+.retry {
+    padding: 5px 5px;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(158, 185, 191);
+    border-left: 3px solid rgb(202, 237, 245);
+    border-top: 3px solid rgb(202, 237, 245);
+    border-right: 3px solid gray;
+    border-bottom: 3px solid gray;
+    outline: 2px solid var(--warna-hitam-dasar);
+    transition: all 0.2s ease;
+}
+
+.retry:hover {
+    transform: translateY(-2px);
+    color: #edefef;
+    background-color: rgb(94, 168, 185);
+    border-left: 3px solid rgb(142, 198, 211);
+    border-top: 3px solid rgb(142, 198, 211);
+    border-right: 3px solid rgb(59, 106, 116);
+    border-bottom: 3px solid rgb(59, 106, 116);
+}
+
+.retry:active {
+    transform: translateY(4px);
+    border-left: 3px solid rgb(59, 106, 116);
+    border-top: 3px solid rgb(59, 106, 116);
+    border-right: 3px solid rgb(142, 198, 211);
+    border-bottom: 3px solid rgb(142, 198, 211);
+}
+
+.retry:hover img {
+    filter: brightness(1000%);
+}
+
 /* container */
 .container {
     position: relative;
     width: 100%;
     height: 100vh;
+    z-index: 0;
 }
 
 /* trail */
@@ -115,7 +302,7 @@ body {
     height: 20px;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
-    z-index: 1000;
+    z-index: 1001;
     pointer-events: none;
     opacity: 0.5;
 }
@@ -699,6 +886,19 @@ body {
         outline: 2px solid var(--warna-hitam-dasar);
         transition: all 0.2s ease;
     }
+
+    .aktif {
+        animation: blink2 .5s ease infinite alternate;
+    }
+
+    .pasif {
+        color: gray;
+        border-left: 3px solid rgb(214, 219, 221);
+        border-top: 3px solid rgb(214, 219, 221);
+        border-right: 3px solid rgb(91, 91, 91);
+        border-bottom: 3px solid rgb(91, 91, 91);
+        background-color: rgb(176, 181, 183);
+    }
 }
 
 /* 375 */
@@ -784,6 +984,19 @@ body {
         outline: 2px solid var(--warna-hitam-dasar);
         transition: all 0.2s ease;
     }
+
+    .aktif {
+        animation: blink2 .5s ease infinite alternate;
+    }
+
+    .pasif {
+        color: gray;
+        border-left: 3px solid rgb(214, 219, 221);
+        border-top: 3px solid rgb(214, 219, 221);
+        border-right: 3px solid rgb(91, 91, 91);
+        border-bottom: 3px solid rgb(91, 91, 91);
+        background-color: rgb(176, 181, 183);
+    }
 }
 
 /* 452 */
@@ -868,5 +1081,18 @@ body {
         cursor: pointer;
         outline: 2px solid var(--warna-hitam-dasar);
         transition: all 0.2s ease;
+    }
+
+    .aktif {
+        animation: blink2 .5s ease infinite alternate;
+    }
+
+    .pasif {
+        color: gray;
+        border-left: 3px solid rgb(214, 219, 221);
+        border-top: 3px solid rgb(214, 219, 221);
+        border-right: 3px solid rgb(91, 91, 91);
+        border-bottom: 3px solid rgb(91, 91, 91);
+        background-color: rgb(176, 181, 183);
     }
 }
