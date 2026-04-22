@@ -106,7 +106,7 @@ function pindah() {
     // logic tampilan
     let UI = [panah, btn1, btn2, hamburger, text, leaderboard];
     UI.forEach(el => el.classList.add(`hilang`));
-    trailWindah.forEach((e) => {e.classList.remove(`hilang`)});
+    trailWindah.forEach((e) => { e.classList.remove(`hilang`) });
     game.style.height = `89vh`;
 
     setTimeout(() => {
@@ -117,10 +117,6 @@ function pindah() {
         portal.style.display = `none`;
         pause.classList.remove(`hilang`);
     }, 800);
-
-    pause.addEventListener('click', () => {
-        pauseMenu.classList.toggle(`hilang`);
-    });
 
     bar.style.animation = `getar-tipis .5s ease`;
     setTimeout(() => {
@@ -134,3 +130,8 @@ function pindah() {
 }
 
 windah.addEventListener(`click`, pindah);
+
+// logic pause
+pause.addEventListener('click', () => {
+    pauseMenu.classList.toggle(`hilang`);
+});
