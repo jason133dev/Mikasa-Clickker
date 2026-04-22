@@ -16,6 +16,7 @@ let barInner = document.querySelector(`.bar-inner`);
 let barStatus = document.querySelector(`.bar-status`);
 let barShadow = document.querySelector(`.bar-shadow`);
 let pause = document.querySelector(`.pause`);
+let pauseMenu = document.querySelector(`.pause-menu`);
 
 let klik = 0;
 let persen = 0;
@@ -116,6 +117,10 @@ function pindah() {
         portal.style.display = `none`;
         pause.classList.remove(`hilang`);
     }, 800);
+
+    pause.addEventListener('click', () => {
+        pauseMenu.classList.toggle(`hilang`);
+    });
 
     bar.style.animation = `getar-tipis .5s ease`;
     setTimeout(() => {

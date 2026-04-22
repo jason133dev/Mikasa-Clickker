@@ -43,6 +43,7 @@ body {
 
 .hilang {
     opacity: 0 !important;
+    pointer-events: none;
 }
 
 .smooth {
