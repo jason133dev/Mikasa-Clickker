@@ -17,6 +17,9 @@ let barStatus = document.querySelector(`.bar-status`);
 let barShadow = document.querySelector(`.bar-shadow`);
 let pause = document.querySelector(`.pause`);
 let pauseMenu = document.querySelector(`.pause-menu`);
+let pauseHome = document.querySelector(`.home`);
+let pausePlay = document.querySelector(`.play`);
+let pauseRetry = document.querySelector(`.retry`);
 
 let klik = 0;
 let persen = 0;
@@ -133,5 +136,9 @@ windah.addEventListener(`click`, pindah);
 
 // logic pause
 pause.addEventListener('click', () => {
+    pauseMenu.classList.toggle(`hilang`);
+});
+
+pausePlay.addEventListener(`click`, () => {
     pauseMenu.classList.toggle(`hilang`);
 });
