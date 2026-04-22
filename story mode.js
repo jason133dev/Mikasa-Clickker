@@ -135,6 +135,26 @@ function pindah() {
 windah.addEventListener(`click`, pindah);
 
 // logic pause
+pauseHome.addEventListener(`click`, () => {
+    location.reload();
+});
+
+pauseRetry.addEventListener(`click`, () => {
+    klik = 0;
+    persen = 0;
+
+    barStatus.innerHTML = `0%`
+    barInner.style.translate = `-100% -2px`;
+    windah.style.translate = `0 0`;
+
+    let trailWindah = document.querySelectorAll(`.trail-windah`);
+    trailWindah.forEach((t) => {
+        t.style.translate = `0px 0px`;
+    });
+
+    pauseMenu.classList.add(`hilang`);
+});
+
 pause.addEventListener('click', () => {
     pauseMenu.classList.toggle(`hilang`);
 });

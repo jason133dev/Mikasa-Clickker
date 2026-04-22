@@ -26,8 +26,8 @@
 
 ## 22-04-2026
 
-- [ ] Buat sistem pause game
-- [ ] Buat `.pause-menu` menjadi responsif
+- [x] Buat sistem pause game
+- [ ] _(Work In Progress)_ Buat `.pause-menu` menjadi responsif
 
 ---
 

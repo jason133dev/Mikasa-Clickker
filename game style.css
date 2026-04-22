@@ -102,6 +102,7 @@ body {
     background-color: #edefef;
 }
 
+/* pause */
 .pause {
     display: flex;
     position: absolute;
@@ -151,6 +152,7 @@ body {
     background-color: #edefef;
 }
 
+/* pause menu */
 .pause-menu {
     position: absolute;
     inset: 0;
@@ -158,14 +160,15 @@ body {
     width: 500px;
     height: 250px;
     text-align: center;
-    background-color: rgb(104, 162, 173);
+    background-color: rgba(104, 161, 173, 0.66);
+    backdrop-filter: blur(10px);
     z-index: 1000;
 }
 
 .pause-menu h1 {
     width: 100%;
     color: var(--warna-hitam-dasar);
-    background-color: rgb(86, 135, 145);
+    background-color: rgba(86, 135, 145, 0.644);
 }
 
 .container-pause-el {
@@ -173,9 +176,8 @@ body {
     justify-content: space-evenly;
     align-items: center;
     width: 80%;
-    height: 212px;
+    height: 80%;
     margin: auto;
-    background-color: rgb(104, 162, 173);
 }
 
 .pause-menu img {
@@ -1021,6 +1023,7 @@ body {
         background-color: var(--warna-hamburger);
     }
 
+
     /* logo */
     .logo {
         width: 187.5px;
@@ -1095,5 +1098,13 @@ body {
         border-right: 3px solid rgb(91, 91, 91);
         border-bottom: 3px solid rgb(91, 91, 91);
         background-color: rgb(176, 181, 183);
+    }
+}
+
+@media(max-width: 527px) {
+
+    /* pause menu */
+    .pause-menu {
+        width: 350px;
     }
 }
