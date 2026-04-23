@@ -178,7 +178,6 @@ body {
     justify-content: center;
     width: 272px;
     height: 272px;
-
 }
 
 #j2prime {
@@ -260,6 +259,7 @@ body {
     translate: -90px 70px;
     transition: all 1s ease;
     animation: sinar 1.5s ease-in-out infinite;
+    z-index: -1000;
 }
 
 .aktif {
@@ -496,5 +496,525 @@ body {
         box-shadow: 0px 0px 200px 79px rgba(122, 191, 205, 0.61);
         -webkit-box-shadow: 0px 0px 200px 79px rgba(122, 191, 205, 0.61);
         -moz-box-shadow: 0px 0px 200px 79px rgba(122, 191, 205, 0.61);
+    }
+}
+
+/* responsif */
+
+/* 1024 */
+@media(max-width: 1024px) {
+
+    /* cara */
+    .cara {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cara img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* 768 */
+@media(max-width: 768px) {
+    .mulai h1 {
+        font-size: 2rem;
+    }
+
+    .ketik {
+        font-size: 2rem;
+    }
+
+    .nama {
+        font-size: 1.6rem;
+        translate: 0 15px;
+    }
+
+    .teks {
+        font-size: 1rem;
+    }
+
+    .container-dialog {
+        padding: 1.7rem 1.2rem;
+    }
+
+    .next {
+        font-size: 1.2rem;
+    }
+
+    /* cara */
+    .cara {
+        width: 170px;
+        height: 170px;
+    }
+
+    .cara img {
+        width: 170px;
+        height: 170px;
+    }
+
+    #j2prime {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        translate: -100px 240px;
+        background: transparent;
+        transition: all 1s ease;
+        z-index: 0;
+    }
+
+    #windah {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        translate: -10px 95px;
+        background: transparent;
+        transition: all 1s ease;
+        z-index: -1;
+    }
+
+    #ledakan {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10px -100px;
+        background: transparent;
+        transition: all 0.2s ease;
+    }
+
+    #fog {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10px 170px;
+        background: transparent;
+        transition: all 0.2s ease;
+    }
+
+    #larry {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10px 95px;
+        background: transparent;
+        transition: all 1s ease;
+        z-index: 0;
+    }
+
+    #sihir {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10px 95px;
+        transition: all 1s ease;
+        z-index: -2;
+        animation: sinar 1.5s ease-in-out infinite;
+    }
+
+    #portal-larry {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        translate: -70px 90px;
+        transition: all 1s ease;
+        animation: sinar 1.5s ease-in-out infinite;
+    }
+
+    #portal-larry img {
+        width: 320px;
+        height: 320px;
+    }
+
+    .container-dialog {
+        padding: 1.7rem 2rem;
+    }
+}
+
+/* 425 */
+@media(max-width: 425px) {
+    .mulai h1 {
+        font-size: 1.5rem;
+    }
+
+    .ketik {
+        font-size: 1.5rem;
+    }
+
+    .nama {
+        font-size: 1.5rem;
+        translate: 0 20px;
+    }
+
+    .teks {
+        font-size: .9rem;
+    }
+
+    .container-dialog {
+        padding: 1.7rem 1.2rem;
+    }
+
+    .next {
+        font-size: 1rem;
+    }
+
+    /* cara */
+    .cara {
+        width: 150px;
+        height: 150px;
+    }
+
+    .cara img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #j2prime {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        translate: -80px 240px;
+        background: transparent;
+        transition: all 1s ease;
+        z-index: 0;
+    }
+
+    #windah {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        translate: -10px 100px;
+        background: transparent;
+        transition: all 1s ease;
+        z-index: -1;
+    }
+
+    #ledakan {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10px -100px;
+        background: transparent;
+        transition: all 0.2s ease;
+    }
+
+    #fog {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10px 170px;
+        background: transparent;
+        transition: all 0.2s ease;
+    }
+
+    #larry {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10px 100px;
+        background: transparent;
+        transition: all 1s ease;
+        z-index: 0;
+    }
+
+    #sihir {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10px 100px;
+        transition: all 1s ease;
+        z-index: -2;
+        animation: sinar 1.5s ease-in-out infinite;
+    }
+
+    #portal-larry {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        translate: -83px 90px;
+        transition: all 1s ease;
+        animation: sinar 1.5s ease-in-out infinite;
+    }
+
+    .next {
+        font-size: 1rem;
+    }
+}
+
+/* 375 */
+@media(max-width: 375px) {
+    .mulai h1 {
+        font-size: 1.8rem;
+    }
+
+    .ketik {
+        font-size: 1.8rem;
+    }
+
+    /* cara */
+    .cara {
+        width: 110px;
+        height: 110px;
+    }
+
+    .cara img {
+        width: 110px;
+        height: 110px;
+    }
+
+    #j2prime {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        translate: -60px 240px;
+        background: transparent;
+        transition: all 1s ease;
+        z-index: 0;
+    }
+
+    #windah {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        translate: -10px 120px;
+        background: transparent;
+        transition: all 1s ease;
+        z-index: -1;
+    }
+
+    #ledakan {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10px -100px;
+        background: transparent;
+        transition: all 0.2s ease;
+    }
+
+    #fog {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10px 170px;
+        background: transparent;
+        transition: all 0.2s ease;
+    }
+
+    #larry {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10px 120px;
+        background: transparent;
+        transition: all 1s ease;
+        z-index: 0;
+    }
+
+    #sihir {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10px 120px;
+        transition: all 1s ease;
+        z-index: -2;
+        animation: sinar 1.5s ease-in-out infinite;
+    }
+
+    #portal-larry {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        translate: -76px 120px;
+        transition: all 1s ease;
+        animation: sinar 1.5s ease-in-out infinite;
+    }
+
+    #portal-larry img {
+        width: 272px;
+        height: 272px;
+    }
+
+    .nama {
+        font-size: 1.3rem;
+        translate: 0 20px;
+    }
+
+    .teks {
+        font-size: .8rem;
+    }
+
+    .container-dialog {
+        padding: 1.7rem 1.2rem;
+    }
+
+    .next {
+        font-size: .8rem;
+    }
+}
+
+/* 320 */
+@media(max-width: 320px) {
+    .mulai h1 {
+        font-size: 1.2rem;
+    }
+
+    .ketik {
+        font-size: 1.4rem;
+    }
+
+    /* cara */
+    .cara {
+        width: 110px;
+        height: 110px;
+    }
+
+    .cara img {
+        width: 110px;
+        height: 110px;
+    }
+
+    #j2prime {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        translate: -60px 240px;
+        background: transparent;
+        transition: all 1s ease;
+        z-index: 0;
+    }
+
+    #windah {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        translate: -10px 120px;
+        background: transparent;
+        transition: all 1s ease;
+        z-index: -1;
+    }
+
+    #ledakan {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10px -100px;
+        background: transparent;
+        transition: all 0.2s ease;
+    }
+
+    #fog {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10px 170px;
+        background: transparent;
+        transition: all 0.2s ease;
+    }
+
+    #larry {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10px 120px;
+        background: transparent;
+        transition: all 1s ease;
+        z-index: 0;
+    }
+
+    #sihir {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10px 120px;
+        transition: all 1s ease;
+        z-index: -2;
+        animation: sinar 1.5s ease-in-out infinite;
+    }
+
+    #portal-larry {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        translate: -76px 120px;
+        transition: all 1s ease;
+        animation: sinar 1.5s ease-in-out infinite;
+    }
+
+    #portal-larry img {
+        width: 272px;
+        height: 272px;
+    }
+
+    .nama {
+        font-size: 1.3rem;
+        translate: 0 25px;
+    }
+
+    .teks {
+        font-size: .7rem;
+    }
+
+    .container-dialog {
+        padding: 1.7rem 1.2rem;
+    }
+
+    .next {
+        font-size: .6rem;
     }
 }

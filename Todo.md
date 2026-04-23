@@ -33,7 +33,7 @@
 
 ## 23-04-2026
 
-- [ ] Buat story.html responsif
+- [x] Buat story.html responsif
 
 ---
 
