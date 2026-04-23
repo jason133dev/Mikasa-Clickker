@@ -806,8 +806,20 @@ body {
 
 /* responsif */
 
-/* 320` */
-@media(max-width: 320px) {
+/* 550 */
+@media(max-width: 550px) {
+    /* pause menu */
+    .pause-menu {
+        width: 450px;
+    }
+
+    .container-pause-el {
+        width: 90%;
+    }
+}
+
+/* 452 */
+@media(max-width: 452px) {
     body {
         box-shadow: 0px 0px 157px -13px rgba(0, 0, 0, 0.44) inset;
         -webkit-box-shadow: 0px 0px 157px -13px rgba(0, 0, 0, 0.44) inset;
@@ -827,6 +839,16 @@ body {
         background-color: var(--warna-hamburger);
     }
 
+    /* pause menu */
+    .pause-menu {
+        width: 350px;
+    }
+
+    .container-pause-el {
+        width: 90%;
+    }
+
+
     /* logo */
     .logo {
         width: 187.5px;
@@ -841,21 +863,6 @@ body {
 
     .text {
         font-size: 13.3px;
-    }
-
-    /* bar */
-    .bar {}
-
-    #bar-outline {}
-
-    .bar-status {}
-
-    .bar-inner {}
-
-    .bar-shadow {}
-
-    .leaderboard {
-        display: none;
     }
 
     .mode {
@@ -925,6 +932,15 @@ body {
         background-color: var(--warna-hamburger);
     }
 
+    /* pause menu */
+    .pause-menu {
+        width: 300px;
+    }
+
+    .container-pause-el {
+        width: 90%;
+    }
+
     /* logo */
     .logo {
         width: 187.5px;
@@ -939,21 +955,6 @@ body {
 
     .text {
         font-size: 13.3px;
-    }
-
-    /* bar */
-    .bar {}
-
-    #bar-outline {}
-
-    .bar-status {}
-
-    .bar-inner {}
-
-    .bar-shadow {}
-
-    .leaderboard {
-        display: none;
     }
 
     .mode {
@@ -1002,8 +1003,8 @@ body {
     }
 }
 
-/* 452 */
-@media(max-width: 452px) {
+/* 320` */
+@media(max-width: 320px) {
     body {
         box-shadow: 0px 0px 157px -13px rgba(0, 0, 0, 0.44) inset;
         -webkit-box-shadow: 0px 0px 157px -13px rgba(0, 0, 0, 0.44) inset;
@@ -1023,6 +1024,14 @@ body {
         background-color: var(--warna-hamburger);
     }
 
+    /* pause menu */
+    .pause-menu {
+        width: 300px;
+    }
+
+    .container-pause-el {
+        width: 90%;
+    }
 
     /* logo */
     .logo {
@@ -1038,21 +1047,6 @@ body {
 
     .text {
         font-size: 13.3px;
-    }
-
-    /* bar */
-    .bar {}
-
-    #bar-outline {}
-
-    .bar-status {}
-
-    .bar-inner {}
-
-    .bar-shadow {}
-
-    .leaderboard {
-        display: none;
     }
 
     .mode {
@@ -1098,13 +1092,5 @@ body {
         border-right: 3px solid rgb(91, 91, 91);
         border-bottom: 3px solid rgb(91, 91, 91);
         background-color: rgb(176, 181, 183);
-    }
-}
-
-@media(max-width: 527px) {
-
-    /* pause menu */
-    .pause-menu {
-        width: 350px;
     }
 }
