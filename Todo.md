@@ -37,6 +37,12 @@
 
 ---
 
+## 24-04-2026
+
+- [ ] Mikirin gameplay Story Mode game.html
+
+---
+
 # Backlog
 
 ### [LOGIC] Gameplay Logic
