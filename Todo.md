@@ -39,7 +39,8 @@
 
 ## 24-04-2026
 
-- [ ] Mikirin gameplay Story Mode game.html
+- [x] Buat `.bar` responsif
+- [ ] Atur posisi tombol pause
 
 ---
 

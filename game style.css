@@ -461,7 +461,7 @@ body {
     left: 0;
     right: 0;
     translate: 0 30px;
-    width: 90%;
+    width: 50%;
     max-width: 500px;
     min-width: 200px;
     height: auto;
@@ -492,7 +492,8 @@ body {
     position: absolute;
     inset: 0;
     margin: auto;
-    translate: -100% -2px;
+    translate: -100%;
+    transform: translateY(-2px);
     height: 12px;
     transition: all 2s ease;
     z-index: -999;
@@ -505,9 +506,9 @@ body {
     right: 0;
     translate: 0 34px;
     margin: auto;
-    width: 90%;
+    width: 49.4%;
     max-width: 492px;
-    min-width: 200px;
+    min-width: 197px;
     height: 12px;
     background-color: rgba(255, 222, 35, 0.39);
     box-shadow: none;
@@ -806,6 +807,25 @@ body {
 
 /* responsif */
 
+/* 768 */
+@media(max-width: 768px) {
+    /* bar */
+    .bar-status {
+        font-size: 11px;
+        translate: 0 .8px;
+    }
+
+    .bar-inner {
+        height: 9px;
+        translate: -100%;
+    }
+
+    .bar-shadow {
+        height: 10px;
+        translate: 0 33.4px;
+    }
+}
+
 /* 550 */
 @media(max-width: 550px) {
     /* pause menu */
@@ -816,10 +836,26 @@ body {
     .container-pause-el {
         width: 90%;
     }
+
+    /* bar */
+    .bar-status {
+        font-size: 6px;
+        translate: 0 6.9px;
+    }
+
+    .bar-inner {
+        height: 8px;
+        translate: -100%;
+    }
+
+    .bar-shadow {
+        height: 8px;
+        translate: 0 37px;
+    }
 }
 
-/* 452 */
-@media(max-width: 452px) {
+/* 425 */
+@media(max-width: 425px) {
     body {
         box-shadow: 0px 0px 157px -13px rgba(0, 0, 0, 0.44) inset;
         -webkit-box-shadow: 0px 0px 157px -13px rgba(0, 0, 0, 0.44) inset;
@@ -848,6 +884,22 @@ body {
         width: 90%;
     }
 
+    /* bar */
+    .bar-status {
+        font-size: 6px;
+        translate: 0 6.9px;
+    }
+
+    .bar-inner {
+        max-width: 196px;
+        height:4.8px;
+        transform: translateY(1.5px);
+    }
+
+    .bar-shadow {
+        height: 8px;
+        translate: 0 37px;
+    }
 
     /* logo */
     .logo {
@@ -941,6 +993,23 @@ body {
         width: 90%;
     }
 
+    /* bar */
+    .bar-status {
+        font-size: 6px;
+        translate: 0 6.9px;
+    }
+
+    .bar-inner {
+        max-width: 196px;
+        height:4.8px;
+        transform: translateY(1.5px);
+    }
+
+    .bar-shadow {
+        height: 8px;
+        translate: 0 37px;
+    }
+
     /* logo */
     .logo {
         width: 187.5px;
@@ -1031,6 +1100,23 @@ body {
 
     .container-pause-el {
         width: 90%;
+    }
+
+    /* bar */
+    .bar-status {
+        font-size: 6px;
+        translate: 0 6.9px;
+    }
+
+    .bar-inner {
+        max-width: 196px;
+        height:4.8px;
+        transform: translateY(1.5px);
+    }
+
+    .bar-shadow {
+        height: 8px;
+        translate: 0 37px;
     }
 
     /* logo */

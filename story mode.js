@@ -100,11 +100,10 @@ function pindah() {
     klik++;
     let rumus = Math.sqrt(klik);
     persen = Math.min(rumus, 100);
-
     barStatus.innerHTML = persen.toFixed(1) + `%`;
 
     let posisiBarInner = persen - 100;
-    barInner.style.translate = `${posisiBarInner}% -2px`;
+    barInner.style.translate = `${posisiBarInner}%`;
 
     // logic tampilan
     let UI = [panah, btn1, btn2, hamburger, text, leaderboard];
@@ -144,7 +143,7 @@ pauseRetry.addEventListener(`click`, () => {
     persen = 0;
 
     barStatus.innerHTML = `0%`
-    barInner.style.translate = `-100% -2px`;
+    barInner.style.translate = `-100%`;
     windah.style.translate = `0 0`;
 
     let trailWindah = document.querySelectorAll(`.trail-windah`);
