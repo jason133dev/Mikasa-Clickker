@@ -40,10 +40,16 @@
 ## 24-04-2026
 
 - [x] Buat `.bar` responsif
-- [ ] Atur posisi tombol pause
-- [ ] Atur sistem tombol pause
+- [x] Atur posisi tombol pause
 - [x] Buat responsif maksimal di hp dengan dvh
-- [ ] Ganti px menjadi % di story.html
+- [x] Ganti px menjadi % di story.html
+
+---
+
+## 25-04-2026
+
+- [ ] Atur sistem tombol pause
+- [ ] Desain 1 versi .bar untuk `max-width: 320px` yang dipakai sampai `max-width: 425px`
 
 ---
 
