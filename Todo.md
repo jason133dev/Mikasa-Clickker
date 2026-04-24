@@ -50,6 +50,7 @@
 
 - [ ] Atur sistem tombol pause
 - [ ] Desain 1 versi .bar untuk `max-width: 320px` yang dipakai sampai `max-width: 425px`
+- [ ] ganti sistem iset, margin auto, dan translate dengan inset dvh di `story.html`
 
 ---
 
