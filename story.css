@@ -79,7 +79,7 @@ body {
 .scene-awal {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 100dvh !important;
     padding: 1rem;
     display: flex;
     justify-content: center;
