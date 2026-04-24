@@ -41,6 +41,8 @@
 
 - [x] Buat `.bar` responsif
 - [ ] Atur posisi tombol pause
+- [ ] Atur sistem tombol pause
+- [x] Buat responsif maksimal di hp dengan dvh
 
 ---
 
