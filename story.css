@@ -189,7 +189,7 @@ body {
     bottom: 0;
     right: 0;
     margin: auto;
-    translate: -200px 240px;
+    translate: -70% 90%;
     background: transparent;
     transition: all 1s ease;
     z-index: 0;
@@ -201,7 +201,7 @@ body {
     bottom: 0;
     right: 0;
     margin: auto;
-    translate: -100px 70px;
+    translate: -15% 25%;
     background: transparent;
     transition: all 1s ease;
     z-index: -1;
@@ -213,7 +213,7 @@ body {
     left: 0;
     bottom: 0;
     margin: auto;
-    translate: 100px -100px;
+    translate: 15% 25%;
     background: transparent;
     transition: all 0.2s ease;
 }
@@ -224,7 +224,7 @@ body {
     left: 0;
     bottom: 0;
     margin: auto;
-    translate: 100px 170px;
+    translate: 15% 25%;
     background: transparent;
     transition: all 0.2s ease;
 }
@@ -235,7 +235,7 @@ body {
     left: 0;
     bottom: 0;
     margin: auto;
-    translate: 90px 70px;
+    translate: 15% 25%;
     background: transparent;
     transition: all 1s ease;
     z-index: 0;
@@ -247,7 +247,7 @@ body {
     left: 0;
     bottom: 0;
     margin: auto;
-    translate: 90px 58px;
+    translate: 15% 25%;
     transition: all 1s ease;
     z-index: -2;
     animation: sinar 1.5s ease-in-out infinite;
@@ -259,7 +259,7 @@ body {
     bottom: 0;
     right: 0;
     margin: auto;
-    translate: -90px 70px;
+    translate: -35% 30%;
     transition: all 1s ease;
     animation: sinar 1.5s ease-in-out infinite;
     z-index: -1000;
@@ -506,6 +506,25 @@ body {
 
 /* 1024 */
 @media(max-width: 1024px) {
+    .mulai h1 {
+        font-size: 2rem;
+    }
+
+    .ketik {
+        font-size: 2rem;
+    }
+
+    .teks {
+        font-size: 1.2rem;
+    }
+
+    .container-dialog {
+        padding: 1.7rem 1.2rem;
+    }
+
+    .next {
+        font-size: 1.2rem;
+    }
 
     /* cara */
     .cara {
@@ -516,6 +535,92 @@ body {
     .cara img {
         width: 200px;
         height: 200px;
+    }
+
+    #j2prime {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        translate: -50% 135%;
+        background: transparent;
+        transition: all 1s ease;
+        z-index: 0;
+    }
+
+    #windah {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        translate: -10% 40%;
+        background: transparent;
+        transition: all 1s ease;
+        z-index: -1;
+    }
+
+    #ledakan {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10% -60%;
+        background: transparent;
+        transition: all 0.2s ease;
+    }
+
+    #fog {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10% 80%;
+        background: transparent;
+        transition: all 0.2s ease;
+    }
+
+    #larry {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10% 40%;
+        background: transparent;
+        transition: all 1s ease;
+        z-index: 0;
+    }
+
+    #sihir {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        translate: 10% 40%;
+        transition: all 1s ease;
+        z-index: -2;
+        animation: sinar 1.5s ease-in-out infinite;
+    }
+
+    #portal-larry {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        translate: -45% 48%;
+        transition: all 1s ease;
+        animation: sinar 1.5s ease-in-out infinite;
+    }
+
+    #portal-larry img {
+        width: 390px;
+        height: 390px;
     }
 }
 
@@ -563,7 +668,7 @@ body {
         bottom: 0;
         right: 0;
         margin: auto;
-        translate: -100px 240px;
+        translate: -50% 135%;
         background: transparent;
         transition: all 1s ease;
         z-index: 0;
@@ -575,7 +680,7 @@ body {
         bottom: 0;
         right: 0;
         margin: auto;
-        translate: -10px 95px;
+        translate: -10% 55%;
         background: transparent;
         transition: all 1s ease;
         z-index: -1;
@@ -587,7 +692,7 @@ body {
         left: 0;
         bottom: 0;
         margin: auto;
-        translate: 10px -100px;
+        translate: 10% -70%;
         background: transparent;
         transition: all 0.2s ease;
     }
@@ -598,7 +703,7 @@ body {
         left: 0;
         bottom: 0;
         margin: auto;
-        translate: 10px 170px;
+        translate: 10% 80%;
         background: transparent;
         transition: all 0.2s ease;
     }
@@ -609,7 +714,7 @@ body {
         left: 0;
         bottom: 0;
         margin: auto;
-        translate: 10px 95px;
+        translate: 10% 55%;
         background: transparent;
         transition: all 1s ease;
         z-index: 0;
@@ -621,7 +726,7 @@ body {
         left: 0;
         bottom: 0;
         margin: auto;
-        translate: 10px 95px;
+        translate: 10% 55%;
         transition: all 1s ease;
         z-index: -2;
         animation: sinar 1.5s ease-in-out infinite;
@@ -633,7 +738,7 @@ body {
         bottom: 0;
         right: 0;
         margin: auto;
-        translate: -70px 90px;
+        translate: -40% 55%;
         transition: all 1s ease;
         animation: sinar 1.5s ease-in-out infinite;
     }
@@ -692,7 +797,7 @@ body {
         bottom: 0;
         right: 0;
         margin: auto;
-        translate: -80px 240px;
+        translate: -50% 190%;
         background: transparent;
         transition: all 1s ease;
         z-index: 0;
@@ -704,7 +809,7 @@ body {
         bottom: 0;
         right: 0;
         margin: auto;
-        translate: -10px 100px;
+        translate: -10% 100%;
         background: transparent;
         transition: all 1s ease;
         z-index: -1;
@@ -716,7 +821,7 @@ body {
         left: 0;
         bottom: 0;
         margin: auto;
-        translate: 10px -100px;
+        translate: 10% -100%;
         background: transparent;
         transition: all 0.2s ease;
     }
@@ -727,7 +832,7 @@ body {
         left: 0;
         bottom: 0;
         margin: auto;
-        translate: 10px 170px;
+        translate: 10% 130%;
         background: transparent;
         transition: all 0.2s ease;
     }
@@ -738,7 +843,7 @@ body {
         left: 0;
         bottom: 0;
         margin: auto;
-        translate: 10px 100px;
+        translate: 10% 100%;
         background: transparent;
         transition: all 1s ease;
         z-index: 0;
@@ -750,7 +855,7 @@ body {
         left: 0;
         bottom: 0;
         margin: auto;
-        translate: 10px 100px;
+        translate: 10% 100%;
         transition: all 1s ease;
         z-index: -2;
         animation: sinar 1.5s ease-in-out infinite;
@@ -762,7 +867,7 @@ body {
         bottom: 0;
         right: 0;
         margin: auto;
-        translate: -83px 90px;
+        translate: -50% 100%;
         transition: all 1s ease;
         animation: sinar 1.5s ease-in-out infinite;
     }
@@ -799,7 +904,7 @@ body {
         bottom: 0;
         right: 0;
         margin: auto;
-        translate: -60px 240px;
+        translate: -50% 220%;
         background: transparent;
         transition: all 1s ease;
         z-index: 0;
@@ -811,7 +916,7 @@ body {
         bottom: 0;
         right: 0;
         margin: auto;
-        translate: -10px 120px;
+        translate: -10% 110%;
         background: transparent;
         transition: all 1s ease;
         z-index: -1;
@@ -823,7 +928,7 @@ body {
         left: 0;
         bottom: 0;
         margin: auto;
-        translate: 10px -100px;
+        translate: 10% -110%;
         background: transparent;
         transition: all 0.2s ease;
     }
@@ -834,7 +939,7 @@ body {
         left: 0;
         bottom: 0;
         margin: auto;
-        translate: 10px 170px;
+        translate: 10% 140%;
         background: transparent;
         transition: all 0.2s ease;
     }
@@ -845,7 +950,7 @@ body {
         left: 0;
         bottom: 0;
         margin: auto;
-        translate: 10px 120px;
+        translate: 10% 110%;
         background: transparent;
         transition: all 1s ease;
         z-index: 0;
@@ -857,7 +962,7 @@ body {
         left: 0;
         bottom: 0;
         margin: auto;
-        translate: 10px 120px;
+        translate: 10% 110%;
         transition: all 1s ease;
         z-index: -2;
         animation: sinar 1.5s ease-in-out infinite;
@@ -869,7 +974,7 @@ body {
         bottom: 0;
         right: 0;
         margin: auto;
-        translate: -76px 120px;
+        translate: -65% 110%;
         transition: all 1s ease;
         animation: sinar 1.5s ease-in-out infinite;
     }
@@ -924,7 +1029,7 @@ body {
         bottom: 0;
         right: 0;
         margin: auto;
-        translate: -60px 240px;
+        translate: -50% 200%;
         background: transparent;
         transition: all 1s ease;
         z-index: 0;
@@ -936,7 +1041,7 @@ body {
         bottom: 0;
         right: 0;
         margin: auto;
-        translate: -10px 120px;
+        translate: -10% 110%;
         background: transparent;
         transition: all 1s ease;
         z-index: -1;
@@ -948,7 +1053,7 @@ body {
         left: 0;
         bottom: 0;
         margin: auto;
-        translate: 10px -100px;
+        translate: 10% -110%;
         background: transparent;
         transition: all 0.2s ease;
     }
@@ -959,7 +1064,7 @@ body {
         left: 0;
         bottom: 0;
         margin: auto;
-        translate: 10px 170px;
+        translate: 10% 140%;
         background: transparent;
         transition: all 0.2s ease;
     }
@@ -970,7 +1075,7 @@ body {
         left: 0;
         bottom: 0;
         margin: auto;
-        translate: 10px 120px;
+        translate: 10% 110%;
         background: transparent;
         transition: all 1s ease;
         z-index: 0;
@@ -982,7 +1087,7 @@ body {
         left: 0;
         bottom: 0;
         margin: auto;
-        translate: 10px 120px;
+        translate: 10% 110%;
         transition: all 1s ease;
         z-index: -2;
         animation: sinar 1.5s ease-in-out infinite;
@@ -994,7 +1099,7 @@ body {
         bottom: 0;
         right: 0;
         margin: auto;
-        translate: -76px 120px;
+        translate: -50% 110%;
         transition: all 1s ease;
         animation: sinar 1.5s ease-in-out infinite;
     }

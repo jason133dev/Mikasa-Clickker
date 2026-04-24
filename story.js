@@ -458,6 +458,7 @@ function main(n) {
         guard = true;
         teks.innerHTML = ``;
         nama.innerHTML = ``;
+        nama.style.display = `none`;
         body.style.animation = `getar .9s ease-in-out infinite`;
         ledakan.classList.remove(`hilang`);
         ledakan.style.animation = `getar .9s ease-in-out infinite`;
@@ -468,6 +469,7 @@ function main(n) {
         }, 1000);
 
         setTimeout(() => {
+            nama.style.display = `flex`;
             teks.innerHTML = ``;
 
             let storyNow = n;

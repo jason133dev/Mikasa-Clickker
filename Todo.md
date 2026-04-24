@@ -43,6 +43,7 @@
 - [ ] Atur posisi tombol pause
 - [ ] Atur sistem tombol pause
 - [x] Buat responsif maksimal di hp dengan dvh
+- [ ] Ganti px menjadi % di story.html
 
 ---
 
