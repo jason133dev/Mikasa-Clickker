@@ -11,15 +11,23 @@ let portal = document.querySelector(`.portal`);
 let windahAnimasi = document.querySelector(`.windah-animasi`);
 let body = document.querySelector(`body`);
 let leaderboard = document.querySelector(`.leaderboard`);
+
 let bar = document.querySelector(`.bar`);
 let barInner = document.querySelector(`.bar-inner`);
 let barStatus = document.querySelector(`.bar-status`);
 let barShadow = document.querySelector(`.bar-shadow`);
+
+let barKecil = document.querySelector(`.bar-kecil`);
+let barInnerKecil = document.querySelector(`.bar-inner-kecil`);
+let barStatusKecil = document.querySelector(`.bar-status-kecil`);
+let barShadowKecil = document.querySelector(`.bar-shadow-kecil`);
+
 let pause = document.querySelector(`.pause`);
 let pauseMenu = document.querySelector(`.pause-menu`);
 let pauseHome = document.querySelector(`.home`);
 let pausePlay = document.querySelector(`.play`);
 let pauseRetry = document.querySelector(`.retry`);
+let pauseWall = document.querySelector(`.pause-wall`);
 
 let klik = 0;
 let persen = 0;
@@ -101,9 +109,11 @@ function pindah() {
     let rumus = Math.sqrt(klik);
     persen = Math.min(rumus, 100);
     barStatus.innerHTML = persen.toFixed(1) + `%`;
+    barStatusKecil.innerHTML = persen.toFixed(1) + `%`;
 
     let posisiBarInner = persen - 100;
     barInner.style.translate = `${posisiBarInner}%`;
+    barInnerKecil.style.translate = `${posisiBarInner}%`;
 
     // logic tampilan
     let UI = [panah, btn1, btn2, hamburger, text, leaderboard];
@@ -115,6 +125,10 @@ function pindah() {
         bar.classList.remove(`hilang`);
         barInner.classList.remove(`hilang`);
         barShadow.classList.remove(`hilang`);
+
+        barKecil.classList.remove(`hilang`);
+        barInnerKecil.classList.remove(`hilang`);
+        barShadowKecil.classList.remove(`hilang`);
         UI.forEach(el => el.style.display = `none`);
         portal.style.display = `none`;
         pause.classList.remove(`hilang`);
@@ -129,11 +143,26 @@ function pindah() {
     setTimeout(() => {
         barShadow.style.boxShadow = `none`;
     }, 400);
+
+    barKecil.style.animation = `getar-tipis .5s ease`;
+    setTimeout(() => {
+        barKecil.style.animation = `none`;
+    }, 500);
+
+    barShadowKecil.style.boxShadow = `0px 0px 41px 0px rgba(255, 217, 0, 0.83)`;
+    setTimeout(() => {
+        barShadowKecil.style.boxShadow = `none`;
+    }, 400);
 }
 
 windah.addEventListener(`click`, pindah);
 
 // logic pause
+pause.addEventListener('click', () => {
+    pauseMenu.classList.toggle(`hilang`);
+    pauseWall.classList.toggle(`hilang`);
+});
+
 pauseHome.addEventListener(`click`, () => {
     location.reload();
 });
@@ -152,12 +181,10 @@ pauseRetry.addEventListener(`click`, () => {
     });
 
     pauseMenu.classList.add(`hilang`);
-});
-
-pause.addEventListener('click', () => {
-    pauseMenu.classList.toggle(`hilang`);
+    pauseWall.classList.add(`hilang`);
 });
 
 pausePlay.addEventListener(`click`, () => {
     pauseMenu.classList.toggle(`hilang`);
+    pauseWall.classList.toggle(`hilang`);
 });

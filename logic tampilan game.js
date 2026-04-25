@@ -50,5 +50,3 @@ btn1.addEventListener(`mouseover`, () => {
 btn1.addEventListener(`mouseout`, () => {
     panah.style.display = `none`;
 })
-
-// media
