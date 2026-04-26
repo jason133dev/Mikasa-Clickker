@@ -55,7 +55,8 @@
 
 ## 26-04-2026 && 27-04-2026
 
-- [ ] Ganti satuan `Story.html` dengan `dvh` untuk vertikal dan `%` untuk sumbu horisontal dan ganti `translate` jadi inset custom
+- [ ] ~~Ganti satuan `Story.html` dengan `dvh` untuk vertikal dan `%` untuk sumbu horisontal dan ganti `translate` jadi inset custom~~
+- [ ] Ganti `Story.html` pakai `position: fixed;` COI
 
 ---
 

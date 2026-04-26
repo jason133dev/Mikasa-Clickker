@@ -34,7 +34,7 @@ html {
 }
 
 body {
-    position: relative;    
+    position: relative;
     width: 100%;
     height: 100dvh;
     background: url(Asset/background.png);
@@ -196,12 +196,10 @@ body {
 }
 
 #windah {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
+    position: fixed;
+    bottom: 180px;
+    right: 0px;
     margin: auto;
-    translate: -15% 25%;
     background: transparent;
     transition: all 1s ease;
     z-index: -1;
@@ -550,12 +548,10 @@ body {
     }
 
     #windah {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
+        position: fixed;
+        bottom: 180px;
+        right: 0px;
         margin: auto;
-        translate: -10% 40%;
         background: transparent;
         transition: all 1s ease;
         z-index: -1;
@@ -675,12 +671,10 @@ body {
     }
 
     #windah {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
+        position: fixed;
+        bottom: 180px;
+        right: 0px;
         margin: auto;
-        translate: -10% 55%;
         background: transparent;
         transition: all 1s ease;
         z-index: -1;
@@ -804,12 +798,10 @@ body {
     }
 
     #windah {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
+        position: fixed;
+        bottom: 180px;
+        right: 0px;
         margin: auto;
-        translate: -10% 100%;
         background: transparent;
         transition: all 1s ease;
         z-index: -1;
@@ -911,10 +903,9 @@ body {
     }
 
     #windah {
-        position: absolute;
-        top: 0;
-        bottom: -18dvh;
-        right: 0;
+        position: fixed;
+        bottom: 180px;
+        right: 0px;
         margin: auto;
         background: transparent;
         transition: all 1s ease;
@@ -1035,12 +1026,10 @@ body {
     }
 
     #windah {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
+        position: fixed;
+        bottom: 180px;
+        right: 0px;
         margin: auto;
-        translate: -10% 110%;
         background: transparent;
         transition: all 1s ease;
         z-index: -1;
