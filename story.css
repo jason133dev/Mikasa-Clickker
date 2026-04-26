@@ -913,10 +913,9 @@ body {
     #windah {
         position: absolute;
         top: 0;
-        bottom: 0;
+        bottom: -18dvh;
         right: 0;
         margin: auto;
-        translate: -10% 110%;
         background: transparent;
         transition: all 1s ease;
         z-index: -1;
