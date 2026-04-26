@@ -197,8 +197,8 @@ body {
 
 #windah {
     position: fixed;
-    bottom: 180px !important;
-    right: 0px;
+    bottom: 35svh;
+    right: 2svh;
     margin: auto;
     background: transparent;
     transition: all 1s ease;
@@ -549,8 +549,8 @@ body {
 
     #windah {
         position: fixed;
-        bottom: 180px !important;
-        right: 0px;
+        bottom: 35svh;
+        right: 2svh;
         margin: auto;
         background: transparent;
         transition: all 1s ease;
@@ -673,7 +673,7 @@ body {
     #windah {
         position: fixed;
         bottom: 180px;
-        right: 0px;
+        right: 2svh;
         margin: auto;
         background: transparent;
         transition: all 1s ease;
@@ -799,8 +799,8 @@ body {
 
     #windah {
         position: fixed;
-        bottom: 180px !important;
-        right: 0px;
+        bottom: 35svh;
+        right: 2svh;
         margin: auto;
         background: transparent;
         transition: all 1s ease;
@@ -904,8 +904,8 @@ body {
 
     #windah {
         position: fixed;
-        bottom: 180px !important;
-        right: 0px;
+        bottom: 35svh;
+        right: 2svh;
         margin: auto;
         background: transparent;
         transition: all 1s ease;
@@ -1027,8 +1027,8 @@ body {
 
     #windah {
         position: fixed;
-        bottom: 180px !important;
-        right: 0px;
+        bottom: 35svh;
+        right: 2svh;
         margin: auto;
         background: transparent;
         transition: all 1s ease;
