@@ -197,7 +197,7 @@ body {
 
 #windah {
     position: fixed;
-    bottom: 180px;
+    bottom: 180px !important;
     right: 0px;
     margin: auto;
     background: transparent;
@@ -549,7 +549,7 @@ body {
 
     #windah {
         position: fixed;
-        bottom: 180px;
+        bottom: 180px !important;
         right: 0px;
         margin: auto;
         background: transparent;
@@ -799,7 +799,7 @@ body {
 
     #windah {
         position: fixed;
-        bottom: 180px;
+        bottom: 180px !important;
         right: 0px;
         margin: auto;
         background: transparent;
@@ -904,7 +904,7 @@ body {
 
     #windah {
         position: fixed;
-        bottom: 180px;
+        bottom: 180px !important;
         right: 0px;
         margin: auto;
         background: transparent;
@@ -1027,7 +1027,7 @@ body {
 
     #windah {
         position: fixed;
-        bottom: 180px;
+        bottom: 180px !important;
         right: 0px;
         margin: auto;
         background: transparent;
