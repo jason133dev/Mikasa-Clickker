@@ -394,7 +394,6 @@ function main(n) {
 
         j2prime.classList.remove(`hilang`);
         j2prime.classList.add(`aktif`);
-        j2prime.style.bottom = `11.2rem`;
 
         setTimeout(() => {
             windah.classList.add(`selfie`);

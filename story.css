@@ -184,12 +184,9 @@ body {
 }
 
 #j2prime {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    translate: -70% 90%;
+    position: fixed;
+    bottom: 20svh;
+    right: 20svh;
     background: transparent;
     transition: all 1s ease;
     z-index: 0;
@@ -199,65 +196,51 @@ body {
     position: fixed;
     bottom: 35svh;
     right: 2svh;
-    margin: auto;
     background: transparent;
     transition: all 1s ease;
     z-index: -1;
 }
 
 #ledakan {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-    translate: 15% 25%;
+    position: fixed;
+    top: -5svh;
+    left: 2svh;
     background: transparent;
     transition: all 0.2s ease;
 }
 
 #fog {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-    translate: 15% 25%;
+    position: fixed;
+    bottom: 26svh;
+    left: 2svh;
     background: transparent;
-    transition: all 0.2s ease;
+    transition: all 1s ease;
 }
 
 #larry {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-    translate: 15% 25%;
+    position: fixed;
+    bottom: 35svh;
+    left: 2svh;
     background: transparent;
     transition: all 1s ease;
     z-index: 0;
 }
 
 #sihir {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-    translate: 15% 25%;
-    transition: all 1s ease;
+    position: fixed;
+    bottom: 35svh;
+    left: 2svh;
+    background: transparent;
+    transition: all 2s ease;
     z-index: -2;
     animation: sinar 1.5s ease-in-out infinite;
 }
 
 #portal-larry {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    translate: -35% 30%;
+    position: fixed;
+    bottom: 35svh;
+    right: 13svh;
+    background: transparent;
     transition: all 1s ease;
     animation: sinar 1.5s ease-in-out infinite;
     z-index: -1000;
@@ -535,88 +518,18 @@ body {
         height: 200px;
     }
 
-    #j2prime {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        translate: -50% 135%;
-        background: transparent;
-        transition: all 1s ease;
-        z-index: 0;
-    }
-
-    #windah {
-        position: fixed;
-        bottom: 35svh;
-        right: 2svh;
-        margin: auto;
-        background: transparent;
-        transition: all 1s ease;
-        z-index: -1;
-    }
-
-    #ledakan {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% -60%;
-        background: transparent;
-        transition: all 0.2s ease;
-    }
-
-    #fog {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% 80%;
-        background: transparent;
-        transition: all 0.2s ease;
-    }
-
-    #larry {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% 40%;
-        background: transparent;
-        transition: all 1s ease;
-        z-index: 0;
-    }
-
-    #sihir {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% 40%;
-        transition: all 1s ease;
-        z-index: -2;
-        animation: sinar 1.5s ease-in-out infinite;
-    }
-
-    #portal-larry {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        translate: -45% 48%;
-        transition: all 1s ease;
-        animation: sinar 1.5s ease-in-out infinite;
-    }
-
     #portal-larry img {
         width: 390px;
         height: 390px;
+    }
+
+    #j2prime {
+        position: fixed;
+        bottom: 20svh;
+        right: 17svh;
+        background: transparent;
+        transition: all 1s ease;
+        z-index: 0;
     }
 }
 
@@ -656,85 +569,6 @@ body {
     .cara img {
         width: 170px;
         height: 170px;
-    }
-
-    #j2prime {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        translate: -50% 135%;
-        background: transparent;
-        transition: all 1s ease;
-        z-index: 0;
-    }
-
-    #windah {
-        position: fixed;
-        bottom: 180px;
-        right: 2svh;
-        margin: auto;
-        background: transparent;
-        transition: all 1s ease;
-        z-index: -1;
-    }
-
-    #ledakan {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% -70%;
-        background: transparent;
-        transition: all 0.2s ease;
-    }
-
-    #fog {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% 80%;
-        background: transparent;
-        transition: all 0.2s ease;
-    }
-
-    #larry {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% 55%;
-        background: transparent;
-        transition: all 1s ease;
-        z-index: 0;
-    }
-
-    #sihir {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% 55%;
-        transition: all 1s ease;
-        z-index: -2;
-        animation: sinar 1.5s ease-in-out infinite;
-    }
-
-    #portal-larry {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        translate: -40% 55%;
-        transition: all 1s ease;
-        animation: sinar 1.5s ease-in-out infinite;
     }
 
     #portal-larry img {
@@ -785,87 +619,17 @@ body {
         height: 150px;
     }
 
-    #j2prime {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        translate: -50% 190%;
-        background: transparent;
-        transition: all 1s ease;
-        z-index: 0;
-    }
-
-    #windah {
-        position: fixed;
-        bottom: 35svh;
-        right: 2svh;
-        margin: auto;
-        background: transparent;
-        transition: all 1s ease;
-        z-index: -1;
-    }
-
-    #ledakan {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% -100%;
-        background: transparent;
-        transition: all 0.2s ease;
-    }
-
-    #fog {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% 130%;
-        background: transparent;
-        transition: all 0.2s ease;
-    }
-
-    #larry {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% 100%;
-        background: transparent;
-        transition: all 1s ease;
-        z-index: 0;
-    }
-
-    #sihir {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% 100%;
-        transition: all 1s ease;
-        z-index: -2;
-        animation: sinar 1.5s ease-in-out infinite;
-    }
-
-    #portal-larry {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        translate: -50% 100%;
-        transition: all 1s ease;
-        animation: sinar 1.5s ease-in-out infinite;
-    }
-
     .next {
         font-size: 1rem;
+    }
+
+    #j2prime {
+        position: fixed;
+        bottom: 25svh;
+        right: 13svh;
+        background: transparent;
+        transition: all 1s ease;
+        z-index: 0;
     }
 }
 
@@ -891,82 +655,12 @@ body {
     }
 
     #j2prime {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        translate: -50% 220%;
-        background: transparent;
-        transition: all 1s ease;
-        z-index: 0;
-    }
-
-    #windah {
         position: fixed;
-        bottom: 35svh;
-        right: 2svh;
-        margin: auto;
-        background: transparent;
-        transition: all 1s ease;
-        z-index: -1;
-    }
-
-    #ledakan {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% -110%;
-        background: transparent;
-        transition: all 0.2s ease;
-    }
-
-    #fog {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% 140%;
-        background: transparent;
-        transition: all 0.2s ease;
-    }
-
-    #larry {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% 110%;
+        bottom: 27svh;
+        right: 11svh;
         background: transparent;
         transition: all 1s ease;
         z-index: 0;
-    }
-
-    #sihir {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% 110%;
-        transition: all 1s ease;
-        z-index: -2;
-        animation: sinar 1.5s ease-in-out infinite;
-    }
-
-    #portal-larry {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        translate: -65% 110%;
-        transition: all 1s ease;
-        animation: sinar 1.5s ease-in-out infinite;
     }
 
     #portal-larry img {
@@ -1011,85 +705,6 @@ body {
     .cara img {
         width: 110px;
         height: 110px;
-    }
-
-    #j2prime {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        translate: -50% 200%;
-        background: transparent;
-        transition: all 1s ease;
-        z-index: 0;
-    }
-
-    #windah {
-        position: fixed;
-        bottom: 35svh;
-        right: 2svh;
-        margin: auto;
-        background: transparent;
-        transition: all 1s ease;
-        z-index: -1;
-    }
-
-    #ledakan {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% -110%;
-        background: transparent;
-        transition: all 0.2s ease;
-    }
-
-    #fog {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% 140%;
-        background: transparent;
-        transition: all 0.2s ease;
-    }
-
-    #larry {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% 110%;
-        background: transparent;
-        transition: all 1s ease;
-        z-index: 0;
-    }
-
-    #sihir {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        translate: 10% 110%;
-        transition: all 1s ease;
-        z-index: -2;
-        animation: sinar 1.5s ease-in-out infinite;
-    }
-
-    #portal-larry {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        translate: -50% 110%;
-        transition: all 1s ease;
-        animation: sinar 1.5s ease-in-out infinite;
     }
 
     #portal-larry img {
