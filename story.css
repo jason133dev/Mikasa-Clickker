@@ -176,17 +176,14 @@ body {
 
 /* cara */
 .cara {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 272px;
     height: 272px;
 }
 
 #j2prime {
     position: fixed;
-    bottom: 20svh;
-    right: 20svw;
+    bottom: 10svh;
+    right: 17svh;
     background: transparent;
     transition: all 1s ease;
     z-index: 0;
@@ -195,7 +192,7 @@ body {
 #windah {
     position: fixed;
     bottom: 35svh;
-    right: 2svw;
+    right: 2svh;
     background: transparent;
     transition: all 1s ease;
     z-index: -1;
@@ -204,7 +201,7 @@ body {
 #ledakan {
     position: fixed;
     top: -5svh;
-    left: 2svw;
+    left: 2svh;
     background: transparent;
     transition: all 0.2s ease;
 }
@@ -212,7 +209,7 @@ body {
 #fog {
     position: fixed;
     bottom: 26svh;
-    left: 2svw;
+    left: 2svh;
     background: transparent;
     transition: all 1s ease;
 }
@@ -229,7 +226,7 @@ body {
 #sihir {
     position: fixed;
     bottom: 35svh;
-    left: 2svw;
+    left: 4svh;
     background: transparent;
     transition: all 2s ease;
     z-index: -2;
@@ -238,8 +235,8 @@ body {
 
 #portal-larry {
     position: fixed;
-    bottom: 35svh;
-    right: 13svw;
+    bottom: 48svh;
+    right: 36svh;
     background: transparent;
     transition: all 1s ease;
     animation: sinar 1.5s ease-in-out infinite;
@@ -518,18 +515,22 @@ body {
         height: 200px;
     }
 
+    #j2prime {
+        bottom: 21svh;
+        right: 17vh;
+    }
+
+    #sihir {
+        left: 2svh;
+    }
+
+    #portal-larry {
+        right: 34svh;
+    }
+
     #portal-larry img {
         width: 390px;
         height: 390px;
-    }
-
-    #j2prime {
-        position: fixed;
-        bottom: 20svh;
-        right: 17svw;
-        background: transparent;
-        transition: all 1s ease;
-        z-index: 0;
     }
 }
 
@@ -569,6 +570,19 @@ body {
     .cara img {
         width: 170px;
         height: 170px;
+    }
+
+    #j2prime {
+        bottom: 26svh;
+        right: 15vh;
+    }
+
+    #sihir {
+        left: 2svh;
+    }
+
+    #portal-larry {
+        right: 27svh;
     }
 
     #portal-larry img {
@@ -619,17 +633,21 @@ body {
         height: 150px;
     }
 
-    .next {
-        font-size: 1rem;
+    #j2prime {
+        bottom: 26svh;
+        right: 13svh;
     }
 
-    #j2prime {
-        position: fixed;
-        bottom: 25svh;
-        right: 13svh;
-        background: transparent;
-        transition: all 1s ease;
-        z-index: 0;
+    #sihir {
+        left: 1svh;
+    }
+
+    #portal-larry {
+        right: 30svh;
+    }
+
+    .next {
+        font-size: 1rem;
     }
 }
 
@@ -655,12 +673,16 @@ body {
     }
 
     #j2prime {
-        position: fixed;
-        bottom: 27svh;
-        right: 11svw;
-        background: transparent;
-        transition: all 1s ease;
-        z-index: 0;
+        bottom: 28svh;
+        right: 11svh;
+    }
+
+    #sihir {
+        left: 1svh;
+    }
+
+    #portal-larry {
+        right: 29svh;
     }
 
     #portal-larry img {
@@ -705,6 +727,19 @@ body {
     .cara img {
         width: 110px;
         height: 110px;
+    }
+
+    #j2prime {
+        bottom: 28svh;
+        right: 11svh;
+    }
+
+    #sihir {
+        left: 1svh;
+    }
+
+    #portal-larry {
+        right: 29svh;
     }
 
     #portal-larry img {
