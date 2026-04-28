@@ -61,7 +61,7 @@
 ---
 
 ## 28-04-2026
-- [ ] Ganti pengatur sumbu x ganti pakai svw
+- [x] Ganti pengatur sumbu x ganti pakai svw
 
 # Backlog
 

@@ -186,7 +186,7 @@ body {
 #j2prime {
     position: fixed;
     bottom: 20svh;
-    right: 20svh;
+    right: 20svw;
     background: transparent;
     transition: all 1s ease;
     z-index: 0;
@@ -195,7 +195,7 @@ body {
 #windah {
     position: fixed;
     bottom: 35svh;
-    right: 2svh;
+    right: 2svw;
     background: transparent;
     transition: all 1s ease;
     z-index: -1;
@@ -204,7 +204,7 @@ body {
 #ledakan {
     position: fixed;
     top: -5svh;
-    left: 2svh;
+    left: 2svw;
     background: transparent;
     transition: all 0.2s ease;
 }
@@ -212,7 +212,7 @@ body {
 #fog {
     position: fixed;
     bottom: 26svh;
-    left: 2svh;
+    left: 2svw;
     background: transparent;
     transition: all 1s ease;
 }
@@ -220,7 +220,7 @@ body {
 #larry {
     position: fixed;
     bottom: 35svh;
-    left: 2svh;
+    left: 2svw;
     background: transparent;
     transition: all 1s ease;
     z-index: 0;
@@ -229,7 +229,7 @@ body {
 #sihir {
     position: fixed;
     bottom: 35svh;
-    left: 2svh;
+    left: 2svw;
     background: transparent;
     transition: all 2s ease;
     z-index: -2;
@@ -239,7 +239,7 @@ body {
 #portal-larry {
     position: fixed;
     bottom: 35svh;
-    right: 13svh;
+    right: 13svw;
     background: transparent;
     transition: all 1s ease;
     animation: sinar 1.5s ease-in-out infinite;
@@ -526,7 +526,7 @@ body {
     #j2prime {
         position: fixed;
         bottom: 20svh;
-        right: 17svh;
+        right: 17svw;
         background: transparent;
         transition: all 1s ease;
         z-index: 0;
@@ -657,7 +657,7 @@ body {
     #j2prime {
         position: fixed;
         bottom: 27svh;
-        right: 11svh;
+        right: 11svw;
         background: transparent;
         transition: all 1s ease;
         z-index: 0;
