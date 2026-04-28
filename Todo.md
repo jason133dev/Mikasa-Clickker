@@ -62,6 +62,7 @@
 
 ## 28-04-2026
 - [x] Ganti pengatur sumbu x ganti pakai svw
+- [x] Ubah semua base ukuran asset jadi 272px
 
 # Backlog
 
