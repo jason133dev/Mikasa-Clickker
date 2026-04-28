@@ -214,7 +214,7 @@ body {
 #fog {
     position: fixed;
     bottom: 26svh;
-    left: 2svh;
+    left: 2svw;
     background: transparent;
     transition: all 1s ease;
 }
