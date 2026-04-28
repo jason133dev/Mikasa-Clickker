@@ -64,6 +64,15 @@
 - [x] Ganti pengatur sumbu x ganti pakai svw
 - [x] Ubah semua base ukuran asset jadi 272px
 
+---
+
+## 29-04-2026
+- [ ] Atur posisi `sihir`
+- [ ] Atur ukuran `portal` di `game.html`
+- [ ] image-rendering: -webkit-optimize-contrast;
+
+---
+
 # Backlog
 
 ### [LOGIC] Gameplay Logic
