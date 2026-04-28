@@ -70,6 +70,7 @@
 - [ ] Atur posisi `sihir`
 - [ ] Atur ukuran `portal` di `game.html`
 - [ ] image-rendering: -webkit-optimize-contrast;
+- [ ] Buat sistem replay untuk mobile `game.html`
 
 ---
 
