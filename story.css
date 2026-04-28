@@ -231,7 +231,7 @@ body {
 #sihir {
     position: fixed;
     bottom: 35svh;
-    left: 4svh;
+    left: 2svw;
     background: transparent;
     transition: all 2s ease;
     z-index: 1;
