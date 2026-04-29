@@ -74,6 +74,11 @@
 
 ---
 
+## 30-04-2026
+- [ ] Buat logic script button `Story Mode` dan `Timer Mode`
+
+---
+
 # Backlog
 
 ### [LOGIC] Gameplay Logic
