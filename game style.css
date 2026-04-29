@@ -414,6 +414,8 @@ body {
 }
 
 #portal {
+    width: 478px;
+    height: 478px;
     animation: sinar 2s ease-in-out infinite alternate;
 }
 
@@ -426,6 +428,11 @@ body {
     z-index: 1000;
     translate: 0px;
     animation: lempar 4s ease-in-out forwards;
+}
+
+.windah-animasi img {
+    width: 100px;
+    height: 100px;
 }
 
 @keyframes sinar {

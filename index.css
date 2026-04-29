@@ -26,6 +26,7 @@
     user-select: none;
     -webkit-user-drag: none;
     outline: none;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 body {

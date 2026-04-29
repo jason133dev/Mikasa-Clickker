@@ -68,8 +68,8 @@
 
 ## 29-04-2026
 - [x] Atur posisi `sihir`
-- [ ] Atur ukuran `portal` di `game.html`
-- [ ] image-rendering: -webkit-optimize-contrast;
+- [x] Atur ukuran `portal` di `game.html`
+- [x] image-rendering: -webkit-optimize-contrast;
 - [x] Buat sistem replay untuk mobile `game.html`
 
 ---
