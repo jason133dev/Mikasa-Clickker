@@ -171,8 +171,10 @@ pauseRetry.addEventListener(`click`, () => {
     klik = 0;
     persen = 0;
 
-    barStatus.innerHTML = `0%`
+    barStatus.innerHTML = `0%`;
     barInner.style.translate = `-100%`;
+    barStatusKecil.innerHTML = `0%`;
+    barInnerKecil.style.translate = `-100%`;
     windah.style.translate = `0 0`;
 
     let trailWindah = document.querySelectorAll(`.trail-windah`);
