@@ -171,6 +171,7 @@ body {
     text-align: center;
     background-color: rgba(104, 161, 173, 0.66);
     backdrop-filter: blur(10px);
+    transition: all .6s ease;
     z-index: 1003;
 }
 
@@ -304,8 +305,9 @@ body {
     position: absolute;
     width: 100%;
     height: 100dvh;
-    background-color: rgba(104, 161, 173, 0.66);
+    background-color: rgba(104, 161, 173, 0);
     backdrop-filter: blur(10px);
+    transition: all .6s ease;
     z-index: 1001;
 }
 
@@ -662,22 +664,6 @@ body {
     height: max-content;
 }
 
-.panah {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    max-width: max-content;
-    max-height: max-content;
-    position: absolute;
-    top: -4.3rem;
-    left: 5.5rem;
-    font-weight: bolder;
-    font-size: 3rem;
-    color: var(--warna-hitam-dasar);
-    z-index: 999;
-    transition: all 2s ease-in-out;
-}
-
 .btn-mode {
     max-width: max-content;
     max-height: max-content;
@@ -690,19 +676,13 @@ body {
     border-top: 3px solid rgb(137, 210, 227);
     border-right: 3px solid rgb(61, 123, 137);
     border-bottom: 3px solid rgb(61, 123, 137);
-    cursor: pointer;
     outline: 2px solid var(--warna-hitam-dasar);
     transition: all 0.2s ease;
 }
 
 .btn-mode:hover {
     transform: translateY(-2px);
-    color: var(--background-color);
-    background-color: rgb(226, 107, 107);
-    border-left: 3px solid rgb(246, 132, 132);
-    border-top: 3px solid rgb(246, 132, 132);
-    border-right: 3px solid rgb(102, 51, 51);
-    border-bottom: 3px solid rgb(102, 51, 51);
+    filter: brightness(0.9);
 }
 
 .btn-mode:active {

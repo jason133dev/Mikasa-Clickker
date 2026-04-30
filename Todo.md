@@ -75,9 +75,8 @@
 ---
 
 ## 30-04-2026
-- [ ] Buat logic script button `Story Mode` dan `Timer Mode`
-- [ ] Pisahkan logic `.trail` ke file baru
-- [ ] hilangan logic `.trail` ketika di @media tertentu
+- [x] Buat logic script button `Story Mode` dan `Timer Mode`
+- [x] Pisahkan logic `.trail` ke file baru
 
 ---
 

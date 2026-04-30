@@ -13,9 +13,9 @@ let guard = false;
 let timer;
 
 function pengurang() {
-    time = time - 1;
-    let menit = String(Math.floor(time / 60)).padStart(2,`0`);
-    let detik = String(time % 60).padStart(2,`0`);
+    time--;
+    let menit = String(Math.floor(time / 60)).padStart(2, `0`);
+    let detik = String(time % 60).padStart(2, `0`);
 
     timerText.innerHTML = `Time: <br>${menit}:${detik}`;
 
@@ -29,7 +29,7 @@ function pengurang() {
 }
 
 function mulaiTimer() {
-    if (guard) {return;}
+    if (guard) { return; }
 
     guard = true;
     timer = setInterval(pengurang, 1000);
@@ -74,5 +74,13 @@ function pindah() {
     game.style.height = `89vh`;
 }
 
-windah.addEventListener(`click`, pindah);
-lagu.addEventListener(`ended`, backsound);
+// export
+export function start() {
+    windah.addEventListener(`click`, pindah);
+    lagu.addEventListener(`ended`, backsound);
+}
+
+export function stop() {
+    clearInterval(timer);
+    windah.removeEventListener(`click`, pindah);
+}
