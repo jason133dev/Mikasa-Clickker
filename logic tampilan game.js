@@ -23,6 +23,7 @@ setTimeout(() => {
 setTimeout(() => {
     UI.forEach((e) => { e.classList.remove('hilang') });
     body.style.backgroundColor = `rgb(122, 191, 205)`;
+    body.style.backgroundImage = `radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0)`;
 }, 4500);
 
 setTimeout(() => {
@@ -42,10 +43,15 @@ setTimeout(() => {
 }, 5700);
 
 // mode
-let mode;
+let mode = await import(`./story mode.js`);
+mode.start();
 
 btn1.addEventListener(`click`, async () => {
     body.style.backgroundColor = `rgb(122, 191, 205)`;
+    body.style.backgroundImage = `radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0)`;
+    body.style.backgroundSize = `30px 30px`;
+    body.style.backgroundPosition = `-5px -5px`;
+
     btn1.classList.add(`aktif`);
     btn1.classList.remove(`pasif`);
     btn2.classList.add(`pasif`);
@@ -62,6 +68,20 @@ btn1.addEventListener(`click`, async () => {
 
 btn2.addEventListener(`click`, async () => {
     body.style.backgroundColor = `rgb(205, 122, 122)`;
+    body.style.backgroundImage = `linear-gradient(
+      -90deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    ),
+    linear-gradient(
+      0deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    )`;
+    body.style.backgroundSize = `var(--gap) var(--gap)`;
+
     btn2.classList.add(`aktif`);
     btn2.classList.remove(`pasif`);
     btn1.classList.add(`pasif`);

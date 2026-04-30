@@ -11,16 +11,19 @@ let windahAnimasi = document.querySelector(`.windah-animasi`);
 let body = document.querySelector(`body`);
 let leaderboard = document.querySelector(`.leaderboard`);
 
+// bar normal
 let bar = document.querySelector(`.bar`);
 let barInner = document.querySelector(`.bar-inner`);
 let barStatus = document.querySelector(`.bar-status`);
 let barShadow = document.querySelector(`.bar-shadow`);
 
+// bar kecil
 let barKecil = document.querySelector(`.bar-kecil`);
 let barInnerKecil = document.querySelector(`.bar-inner-kecil`);
 let barStatusKecil = document.querySelector(`.bar-status-kecil`);
 let barShadowKecil = document.querySelector(`.bar-shadow-kecil`);
 
+// pause
 let pause = document.querySelector(`.pause`);
 let pauseMenu = document.querySelector(`.pause-menu`);
 let pauseHome = document.querySelector(`.home`);
