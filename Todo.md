@@ -90,6 +90,13 @@
 
 ---
 
+## 02-05-2026
+- [ ] Buat sistem `Dimension`
+- [ ] Variasi warna `live`
+- [ ] Rancang perencanaan scene saat `persen` tertentu 
+
+---
+
 # Backlog
 
 ### [LOGIC] Gameplay Logic
