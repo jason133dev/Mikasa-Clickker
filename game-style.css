@@ -43,7 +43,7 @@ body {
     background-color: rgb(78, 123, 132);
 
     /* pola bulat */
-    background-image: radial-gradient(rgba(255, 255, 255, 0) 2px, transparent 0);
+    background-image: radial-gradient(rgba(255, 0, 0, 0) 2px, transparent 0);
     background-size: 30px 30px;
     background-position: -5px -5px;
 
@@ -803,7 +803,9 @@ body {
 /* game */
 .game {
     position: relative;
-    height: 100dvh;
+    height: 84dvh;
+    margin-top: 8dvh;
+    margin-bottom: 8dvh;
     z-index: -1;
 }
 

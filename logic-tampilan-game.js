@@ -30,7 +30,7 @@ windah.style.pointerEvents = `none`;
 setTimeout(() => {
     UI.forEach((e) => { e.classList.remove('hilang') });
     body.style.backgroundColor = `rgb(122, 191, 205)`;
-    body.style.backgroundImage = `radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0)`;
+    body.style.backgroundImage = `radial-gradient(rgba(255, 255, 255, 0.3) 2px, transparent 0)`;
 }, 3600);
 
 setTimeout(() => {
