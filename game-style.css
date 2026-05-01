@@ -1148,7 +1148,7 @@ body {
         height: max-content;
     }
 
-    .btn-mode {
+    .btn-mode1 {
         max-width: max-content;
         max-height: max-content;
         padding: .1rem .5rem;
@@ -1160,7 +1160,22 @@ body {
         border-top: 3px solid rgb(137, 210, 227);
         border-right: 3px solid rgb(61, 123, 137);
         border-bottom: 3px solid rgb(61, 123, 137);
-        cursor: pointer;
+        outline: 2px solid var(--warna-hitam-dasar);
+        transition: all 0.2s ease;
+    }
+
+    .btn-mode2 {
+        max-width: max-content;
+        max-height: max-content;
+        padding: .1rem .5rem;
+        font-size: 1rem;
+        border-radius: .3rem;
+        color: var(--background-color);
+        background-color: rgb(205, 122, 122);
+        border-left: 3px solid rgb(229, 145, 145);
+        border-top: 3px solid rgb(229, 145, 145);
+        border-right: 3px solid rgb(154, 86, 86);
+        border-bottom: 3px solid rgb(154, 86, 86);
         outline: 2px solid var(--warna-hitam-dasar);
         transition: all 0.2s ease;
     }
@@ -1284,7 +1299,7 @@ body {
         height: max-content;
     }
 
-    .btn-mode {
+    .btn-mode1 {
         max-width: max-content;
         max-height: max-content;
         padding: .1rem .5rem;
@@ -1296,7 +1311,22 @@ body {
         border-top: 3px solid rgb(137, 210, 227);
         border-right: 3px solid rgb(61, 123, 137);
         border-bottom: 3px solid rgb(61, 123, 137);
-        cursor: pointer;
+        outline: 2px solid var(--warna-hitam-dasar);
+        transition: all 0.2s ease;
+    }
+
+    .btn-mode2 {
+        max-width: max-content;
+        max-height: max-content;
+        padding: .1rem .5rem;
+        font-size: 1rem;
+        border-radius: .3rem;
+        color: var(--background-color);
+        background-color: rgb(205, 122, 122);
+        border-left: 3px solid rgb(229, 145, 145);
+        border-top: 3px solid rgb(229, 145, 145);
+        border-right: 3px solid rgb(154, 86, 86);
+        border-bottom: 3px solid rgb(154, 86, 86);
         outline: 2px solid var(--warna-hitam-dasar);
         transition: all 0.2s ease;
     }
@@ -1420,7 +1450,7 @@ body {
         height: max-content;
     }
 
-    .btn-mode {
+    .btn-mode1 {
         max-width: max-content;
         max-height: max-content;
         padding: .1rem .5rem;
@@ -1432,7 +1462,22 @@ body {
         border-top: 3px solid rgb(137, 210, 227);
         border-right: 3px solid rgb(61, 123, 137);
         border-bottom: 3px solid rgb(61, 123, 137);
-        cursor: pointer;
+        outline: 2px solid var(--warna-hitam-dasar);
+        transition: all 0.2s ease;
+    }
+
+    .btn-mode2 {
+        max-width: max-content;
+        max-height: max-content;
+        padding: .1rem .5rem;
+        font-size: 1rem;
+        border-radius: .3rem;
+        color: var(--background-color);
+        background-color: rgb(205, 122, 122);
+        border-left: 3px solid rgb(229, 145, 145);
+        border-top: 3px solid rgb(229, 145, 145);
+        border-right: 3px solid rgb(154, 86, 86);
+        border-bottom: 3px solid rgb(154, 86, 86);
         outline: 2px solid var(--warna-hitam-dasar);
         transition: all 0.2s ease;
     }
@@ -1556,7 +1601,7 @@ body {
         height: max-content;
     }
 
-    .btn-mode {
+    .btn-mode1 {
         max-width: max-content;
         max-height: max-content;
         padding: .1rem .5rem;
@@ -1568,7 +1613,22 @@ body {
         border-top: 3px solid rgb(137, 210, 227);
         border-right: 3px solid rgb(61, 123, 137);
         border-bottom: 3px solid rgb(61, 123, 137);
-        cursor: pointer;
+        outline: 2px solid var(--warna-hitam-dasar);
+        transition: all 0.2s ease;
+    }
+
+    .btn-mode2 {
+        max-width: max-content;
+        max-height: max-content;
+        padding: .1rem .5rem;
+        font-size: 1rem;
+        border-radius: .3rem;
+        color: var(--background-color);
+        background-color: rgb(205, 122, 122);
+        border-left: 3px solid rgb(229, 145, 145);
+        border-top: 3px solid rgb(229, 145, 145);
+        border-right: 3px solid rgb(154, 86, 86);
+        border-bottom: 3px solid rgb(154, 86, 86);
         outline: 2px solid var(--warna-hitam-dasar);
         transition: all 0.2s ease;
     }
