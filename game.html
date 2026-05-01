@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Mikasa Clickker</title>
-    <title>Mikasa Clikker</title>
-    <link rel="stylesheet" href="game style.css">
+    <link rel="stylesheet" href="game-style.css">
     <link rel="icon" href="Asset/windah.png">
-    <link rel="modulepreload" href="./story mode.js">
-    <link rel="modulepreload" href="./timer mode.js">
+    <link rel="modulepreload" href="./story-mode.js">
+    <link rel="modulepreload" href="./timer-mode.js">
 </head>
 
 <body class="smooth">
@@ -51,16 +50,16 @@
 
         <!-- pause menu -->
         <div class="pause-menu hilang">
-            <h1>Pause</h1>
+            <h1 id="pause-h1">Pause</h1>
             <div class="container-pause-el">
                 <div class="home">
-                    <img src="Asset/home1.png">
+                    <img src="Asset/home1.png" fetchpriority="low">
                 </div>
                 <div class="play">
-                    <img src="Asset/play1.png">
+                    <img src="Asset/play1.png" fetchpriority="low">
                 </div>
                 <div class="retry">
-                    <img src="Asset/retry1.png">
+                    <img src="Asset/retry1.png" fetchpriority="low">
                 </div>
             </div>
         </div>
@@ -77,44 +76,46 @@
         </div>
 
         <!-- portal -->
-        <div class="portal hilang">
-            <img src="Asset/portal larry1.png" id="portal">
+        <div class="portal">
+            <img src="Asset/portal larry1.png" fetchpriority="high" id="portal">
         </div>
 
         <!-- windah-animasi -->
         <div class="windah-animasi">
-            <img src="Asset/windah.png">
+            <img src="Asset/windah.png" fetchpriority="high">
         </div>
 
         <!-- bar -->
         <div class="bar hilang smooth">
-            <img src="Asset/bar outline.png" id="bar-outline">
+            <img src="Asset/bar outline.png" id="bar-outline" fetchpriority="low">
 
             <h4 class="bar-status">0%</h4>
 
-            <img class="bar-inner hilang smooth" src="Asset/bar innner.png">
+            <img class="bar-inner hilang smooth" src="Asset/bar innner.png" fetchpriority="low">
         </div>
 
         <div class="bar-shadow hilang smooth"></div>
 
         <!-- bar kecil -->
         <div class="bar-kecil hilang smooth">
-            <img src="Asset/bar outline ver.kecil.png" id="bar-outline-kecil">
+            <img src="Asset/bar outline ver.kecil.png" id="bar-outline-kecil" fetchpriority="low">
 
             <h4 class="bar-status-kecil">0%</h4>
 
-            <img class="bar-inner-kecil hilang smooth" src="Asset/bar innner ver.kecil.png">
+            <img class="bar-inner-kecil hilang smooth" src="Asset/bar innner ver.kecil.png" fetchpriority="low">
         </div>
 
         <div class="bar-shadow-kecil hilang smooth"></div>
 
         <!-- game -->
         <section class="game hilang smooth">
+            <!-- mode -->
             <div class="mode">
-                <button class="btn-mode aktif" id="btn-mode1" type="button">Story Mode</button>
-                <button class="btn-mode pasif" id="btn-mode2" type="button">Timer Mode</button>
+                <button class="btn-mode1 aktif1" id="btn-mode1" type="button">Story Mode</button>
+                <button class="btn-mode2 pasif" id="btn-mode2" type="button">Timer Mode</button>
             </div>
 
+            <!-- leaderboard -->
             <div class="leaderboard">
                 <h1>leaderboard</h1>
                 <div class="container-isi">
@@ -150,18 +151,27 @@
                         <h4>999</h4>
                     </div>
                 </div>
-
             </div>
 
+            <!-- windah -->
             <div class="windah">
-                <img src="Asset/windah.png">
+                <img src="Asset/windah.png" fetchpriority="high">
             </div>
             <p id="timer">Time: <br>01:00</p>
-
-
         </section>
 
+        <!-- live -->
+        <div class="live hilang smooth">
+            <div class="live-dot"></div>
+            <p>Dimension: Stable</p>
+        </div>
+
         <!-- trail windah -->
+        <div class="trail-windah hilang"><img src="Asset/windah.png"></div>
+        <div class="trail-windah hilang"><img src="Asset/windah.png"></div>
+        <div class="trail-windah hilang"><img src="Asset/windah.png"></div>
+        <div class="trail-windah hilang"><img src="Asset/windah.png"></div>
+        <div class="trail-windah hilang"><img src="Asset/windah.png"></div>
         <div class="trail-windah hilang"><img src="Asset/windah.png"></div>
         <div class="trail-windah hilang"><img src="Asset/windah.png"></div>
         <div class="trail-windah hilang"><img src="Asset/windah.png"></div>
@@ -171,7 +181,7 @@
 
     <!-- Logic -->
     <script src="trail.js" type="module"></script>
-    <script src="logic tampilan game.js" type="module"></script>
+    <script src="logic-tampilan-game.js" type="module"></script>
 </body>
 
 </html>

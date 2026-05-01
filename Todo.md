@@ -77,14 +77,15 @@
 ## 30-04-2026
 - [x] Buat logic script button `Story Mode` dan `Timer Mode`
 - [x] Pisahkan logic `.trail` ke file baru
-- [x] **EXTRA: Update UI `game.html`**
+- [x] **EXTRA:** Update UI `game.html`**
 
 ---
 
 ## 01-05-2026
-- [ ] Ubah file img Bang Windah dari `.png` ke `.webp`
-- [ ] Tambahkan `<link rel="preload" as="image" href="path/ke/gambar.webp">` di dalam tag `<head>`
-- [ ] Tambahkan atribut `fetchpriority="high"` pada tag `<img>` utama.
+- [x] Mikirin gameplay
+- [x] **EXTRA:** Optimalisasi `LCP` dan `fetchpriority`
+- [x] **EXTRA:** Hilangkan `Tap Highlight` dan Image `callout`
+- [x] **EXTRA:** Update UI `game.html`
 
 ---
 

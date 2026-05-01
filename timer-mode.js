@@ -155,13 +155,65 @@ function pindah() {
     }, 400);
 }
 
+// logic pause
+function logicPause() {
+    pauseMenu.classList.toggle(`hilang`);
+    pauseWall.classList.toggle(`hilang`);
+}
+
+function logicPauseHome() {
+    location.reload();
+}
+
+function logicPauseRetry() {
+    klik = 0;
+    persen = 0;
+
+    barStatus.innerHTML = `0%`;
+    barInner.style.translate = `-100%`;
+    barStatusKecil.innerHTML = `0%`;
+    barInnerKecil.style.translate = `-100%`;
+    windah.style.translate = `0 0`;
+
+    let trailWindah = document.querySelectorAll(`.trail-windah`);
+    trailWindah.forEach((t) => {
+        t.style.translate = `0px 0px`;
+    });
+
+    pauseMenu.classList.add(`hilang`);
+    pauseWall.classList.add(`hilang`);
+}
+
+function logicPausePlay() {
+    pauseMenu.classList.toggle(`hilang`);
+    pauseWall.classList.toggle(`hilang`);
+}
+
 // export
 export function start() {
     windah.addEventListener(`click`, pindah);
     lagu.addEventListener(`ended`, backsound);
+
+    // logic pause
+    pause.addEventListener('click', logicPause);
+
+    pauseHome.addEventListener(`click`, logicPauseHome);
+
+    pauseRetry.addEventListener(`click`, logicPauseRetry);
+
+    pausePlay.addEventListener(`click`, logicPausePlay);
 }
 
 export function stop() {
     clearInterval(timer);
     windah.removeEventListener(`click`, pindah);
+
+    // logic pause
+    pause.removeEventListener('click', logicPause);
+
+    pauseHome.removeEventListener(`click`, logicPauseHome);
+
+    pauseRetry.removeEventListener(`click`, logicPauseRetry);
+
+    pausePlay.removeEventListener(`click`, logicPausePlay);
 }

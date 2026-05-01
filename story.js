@@ -103,7 +103,7 @@ let story = [
 
     // 17 larry
     {
-        teks: 'Kamu saya hukum terjebak didalam dimensi ini sampai kamu mendapatkan kekuatan yang kuat!!',
+        teks: 'Selamat menikmati hukumanmu di dimensi ini. Silakan cari celah untuk keluar... kalau bisa!!',
         cara: 'larry'
     },
 

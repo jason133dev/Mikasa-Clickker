@@ -10,6 +10,7 @@ let portal = document.querySelector(`.portal`);
 let windahAnimasi = document.querySelector(`.windah-animasi`);
 let body = document.querySelector(`body`);
 let leaderboard = document.querySelector(`.leaderboard`);
+let live = document.querySelector(`.live`);
 
 // bar normal
 let bar = document.querySelector(`.bar`);
@@ -79,6 +80,10 @@ function pindah() {
     barInner.style.translate = `${posisiBarInner}%`;
     barInnerKecil.style.translate = `${posisiBarInner}%`;
 
+    if (persen >= 10) {
+        body.style.boxShadow = `0px 0px 160px 8px rgba(0,0,0,0.75) inset`;
+    }
+
     // logic tampilan
     let UI = [btn1, btn2, hamburger, text, leaderboard];
     UI.forEach(el => el.classList.add(`hilang`));
@@ -93,9 +98,13 @@ function pindah() {
         barKecil.classList.remove(`hilang`);
         barInnerKecil.classList.remove(`hilang`);
         barShadowKecil.classList.remove(`hilang`);
+
         UI.forEach(el => el.style.display = `none`);
         portal.style.display = `none`;
+
         pause.classList.remove(`hilang`);
+
+        live.classList.remove(`hilang`)
     }, 800);
 
     bar.style.animation = `getar-tipis .5s ease`;

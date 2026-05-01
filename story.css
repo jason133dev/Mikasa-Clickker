@@ -26,6 +26,11 @@
     font-family: var(--font-dasar);
     user-select: none;
     -webkit-user-drag: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
+    -webkit-user-select: none;
     outline: none;
     image-rendering: -webkit-optimize-contrast;
 }

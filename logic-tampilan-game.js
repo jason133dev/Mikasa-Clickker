@@ -8,6 +8,16 @@ let windahAnimasi = document.querySelector(`.windah-animasi`);
 let windah = document.querySelector(`.windah`);
 let body = document.querySelector(`body`);
 let trailWindah = document.querySelectorAll(`.trail-windah`);
+let leaderboard = document.querySelector(`.leaderboard`);
+
+// pause
+let pause = document.querySelector(`.pause`);
+let pauseH1 = document.querySelector(`#pause-h1`);
+let pauseMenu = document.querySelector(`.pause-menu`);
+let pauseHome = document.querySelector(`.home`);
+let pausePlay = document.querySelector(`.play`);
+let pauseRetry = document.querySelector(`.retry`);
+let pauseWall = document.querySelector(`.pause-wall`);
 
 // animasi masuk
 let UI = [btn1, btn2, hamburger, text, game];
@@ -17,14 +27,10 @@ trailWindah.forEach((e) => { e.style.pointerEvents = `none` });
 windah.style.pointerEvents = `none`;
 
 setTimeout(() => {
-    portal.classList.remove('hilang');
-}, 1000);
-
-setTimeout(() => {
     UI.forEach((e) => { e.classList.remove('hilang') });
     body.style.backgroundColor = `rgb(122, 191, 205)`;
     body.style.backgroundImage = `radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0)`;
-}, 4500);
+}, 3600);
 
 setTimeout(() => {
     UI.forEach((e) => { e.classList.remove('smooth') });
@@ -43,7 +49,7 @@ setTimeout(() => {
 }, 5700);
 
 // mode
-let mode = await import(`./story mode.js`);
+let mode = await import(`./story-mode.js`);
 mode.start();
 
 btn1.addEventListener(`click`, async () => {
@@ -51,18 +57,22 @@ btn1.addEventListener(`click`, async () => {
     body.style.backgroundImage = `radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0)`;
     body.style.backgroundSize = `30px 30px`;
     body.style.backgroundPosition = `-5px -5px`;
+    leaderboard.style.display = `none`;
 
-    btn1.classList.add(`aktif`);
+    btn1.classList.add(`aktif1`);
     btn1.classList.remove(`pasif`);
     btn2.classList.add(`pasif`);
-    btn2.classList.remove(`aktif`);
+    btn2.classList.remove(`aktif1`);
+
+    pauseMenu.style.backgroundColor = `rgba(104, 161, 173, 0.66)`;
+    pauseH1.style.backgroundColor = `rgba(86, 135, 145, 0.644)`;
 
     // script
     if (mode && typeof mode.stop === `function`) {
         mode.stop();
     }
 
-    mode = await import(`./story mode.js`);
+    mode = await import(`./story-mode.js`);
     mode.start();
 });
 
@@ -81,17 +91,21 @@ btn2.addEventListener(`click`, async () => {
       var(--color) var(--gap)
     )`;
     body.style.backgroundSize = `var(--gap) var(--gap)`;
+    leaderboard.style.display = `flex`;
 
-    btn2.classList.add(`aktif`);
+    btn2.classList.add(`aktif2`);
     btn2.classList.remove(`pasif`);
     btn1.classList.add(`pasif`);
-    btn1.classList.remove(`aktif`);
+    btn1.classList.remove(`aktif2`);
+    
+    pauseMenu.style.backgroundColor = `rgba(177, 106, 106, 0.66)`;
+    pauseH1.style.backgroundColor = `rgb(165, 98, 98, 0.644)`;
 
     // script
     if (mode && typeof mode.stop === `function`) {
         mode.stop();
     }
 
-    mode = await import(`./timer mode.js`);
+    mode = await import(`./timer-mode.js`);
     mode.start();
 });

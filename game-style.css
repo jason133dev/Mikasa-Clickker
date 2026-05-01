@@ -25,6 +25,11 @@
     font-family: var(--font-dasar);
     user-select: none;
     -webkit-user-drag: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
+    -webkit-user-select: none;
     cursor: none;
     image-rendering: optimizeSpeed;
 }
@@ -186,7 +191,7 @@ body {
     z-index: 1003;
 }
 
-.pause-menu h1 {
+#pause-h1 {
     width: 100%;
     color: var(--warna-hitam-dasar);
     background-color: rgba(86, 135, 145, 0.644);
@@ -346,7 +351,7 @@ body {
     opacity: 0.3;
     scale: 0.8;
     filter: brightness(1000%);
-    transition: all .2s ease-in;
+    transition: all .2s ease-in-out;
 }
 
 /* logo */
@@ -558,8 +563,6 @@ body {
     overflow: hidden;
 }
 
-#bar-outline-kecil {}
-
 .bar-status-kecil {
     position: absolute;
     inset: 0;
@@ -664,6 +667,7 @@ body {
     height: 77vh;
 }
 
+/* mode */
 .mode {
     display: flex;
     align-items: center;
@@ -675,7 +679,7 @@ body {
     height: max-content;
 }
 
-.btn-mode {
+.btn-mode1 {
     max-width: max-content;
     max-height: max-content;
     padding: .1rem .5rem;
@@ -691,21 +695,54 @@ body {
     transition: all 0.2s ease;
 }
 
-.btn-mode:hover {
+.btn-mode1:hover {
     transform: translateY(-2px);
     filter: brightness(0.9);
 }
 
-.btn-mode:active {
+.btn-mode1:active {
     transform: translateY(4px);
-    border-left: 3px solid rgb(102, 51, 51);
-    border-top: 3px solid rgb(102, 51, 51);
-    border-right: 3px solid rgb(246, 132, 132);
-    border-bottom: 3px solid rgb(246, 132, 132);
+    border-left: 3px solid rgb(61, 123, 137);
+    border-top: 3px solid rgb(61, 123, 137);
+    border-right: 3px solid rgb(137, 210, 227);
+    border-bottom: 3px solid rgb(137, 210, 227);
 }
 
-.aktif {
+.btn-mode2 {
+    max-width: max-content;
+    max-height: max-content;
+    padding: .1rem .5rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    color: var(--background-color);
+    background-color: rgb(205, 122, 122);
+    border-left: 3px solid rgb(229, 145, 145);
+    border-top: 3px solid rgb(229, 145, 145);
+    border-right: 3px solid rgb(154, 86, 86);
+    border-bottom: 3px solid rgb(154, 86, 86);
+    outline: 2px solid var(--warna-hitam-dasar);
+    transition: all 0.2s ease;
+}
+
+.btn-mode2:hover {
+    transform: translateY(-2px);
+    filter: brightness(0.9);
+}
+
+.btn-mode2:active {
+    transform: translateY(4px);
+    border-left: 3px solid rgb(154, 86, 86);
+    border-top: 3px solid rgb(154, 86, 86);
+    border-right: 3px solid rgb(229, 145, 145);
+    border-bottom: 3px solid rgb(229, 145, 145);
+}
+
+.aktif1 {
     animation: blink2 .5s ease infinite alternate;
+}
+
+.aktif2 {
+    animation: blink2red .5s ease infinite alternate;
 }
 
 .pasif {
@@ -715,6 +752,14 @@ body {
     border-right: 3px solid rgb(91, 91, 91);
     border-bottom: 3px solid rgb(91, 91, 91);
     background-color: rgb(176, 181, 183);
+}
+
+.pasif:active {
+    transform: translateY(4px);
+    border-left: 3px solid rgb(91, 91, 91);
+    border-top: 3px solid rgb(91, 91, 91);
+    border-right: 3px solid rgb(214, 219, 221);
+    border-bottom: 3px solid rgb(214, 219, 221);
 }
 
 /* blink 2 */
@@ -732,6 +777,21 @@ body {
     }
 }
 
+@keyframes blink2red {
+    from {
+        box-shadow: 0px 0px 200px 79px rgba(122, 205, 205, 0.702);
+        -webkit-box-shadow: 0px 0px 200px 79px rgba(122, 205, 205, 0.702);
+        -moz-box-shadow: 0px 0px 200px 79px rgba(122, 205, 205, 0.702);
+    }
+
+    to {
+        box-shadow: 0px 0px 200px 79px rgba(205, 122, 122, 0);
+        -webkit-box-shadow: 0px 0px 200px 79px rgba(205, 122, 122, 0);
+        -moz-box-shadow: 0px 0px 200px 79px rgba(205, 122, 122, 0);
+    }
+}
+
+/* leaderboard */
 .leaderboard {
     display: none;
     flex-direction: column;
@@ -745,7 +805,8 @@ body {
     border: var(--border-estetik);
     border-width: 2px;
     border-radius: .5rem;
-    background-color: rgb(86, 134, 144);
+    background-color: #edefef24;
+    backdrop-filter: blur(10px);
 }
 
 .container-isi {
@@ -816,6 +877,60 @@ body {
     border-bottom: none;
 }
 
+/* live */
+.live {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4svh;
+    margin: auto;
+    color: var(--warna-hitam-dasar);
+    z-index: 1000;
+}
+
+.live-dot {
+    width: 15px;
+    height: 15px;
+    border: 2.5px solid var(--warna-hitam-dasar);
+    border-radius: 50%;
+    background-color: rgb(39, 201, 77);
+    transition: all 2s ease;
+    animation: live .5s ease-in-out infinite alternate;
+}
+
+@keyframes live {
+    from {
+        filter: brightness(1.5);
+        box-shadow:
+            0px 0px 20px .1px rgba(39, 201, 77, 0.1),
+            0px 0px 20px .1px rgba(39, 201, 77, 0.1),
+            0px 0px 20px .1px rgba(39, 201, 77, 0.1),
+            0px 0px 20px .1px rgba(39, 201, 77, 0.1),
+            0px 0px 20px .1px rgba(39, 201, 77, 0.1),
+            0px 0px 20px .1px rgba(39, 201, 77, 0.1),
+            0px 0px 20px .1px rgba(39, 201, 77, 0.1),
+            0px 0px 20px .1px rgba(39, 201, 77, 0.1);
+    }
+
+    to {
+        filter: brightness(1);
+        box-shadow:
+            0px 0px 0px 0px rgba(39, 201, 77, 0.2),
+            0px 0px 0px 0px rgba(39, 201, 77, 0.2),
+            0px 0px 0px 0px rgba(39, 201, 77, 0.2),
+            0px 0px 0px 0px rgba(39, 201, 77, 0.2),
+            0px 0px 0px 0px rgba(39, 201, 77, 0.2),
+            0px 0px 0px 0px rgba(39, 201, 77, 0.2),
+            0px 0px 0px 0px rgba(39, 201, 77, 0.2),
+            0px 0px 0px 0px rgba(39, 201, 77, 0.2);
+    }
+}
+
+/* windah */
 .windah {
     position: absolute;
     inset: 0;
@@ -833,7 +948,7 @@ body {
 }
 
 .windah:active {
-    transform: scale(0.7);
+    transform: scale(0.9);
 }
 
 .game p {
@@ -925,6 +1040,10 @@ body {
 
     .bar-kecil {
         display: block;
+    }
+
+    .windah:hover {
+        scale: 1;
     }
 }
 
@@ -1058,6 +1177,10 @@ body {
         border-bottom: 3px solid rgb(91, 91, 91);
         background-color: rgb(176, 181, 183);
     }
+
+    .windah:hover {
+        scale: 1;
+    }
 }
 
 /* 375px <= width <= 425px */
@@ -1189,6 +1312,10 @@ body {
         border-right: 3px solid rgb(91, 91, 91);
         border-bottom: 3px solid rgb(91, 91, 91);
         background-color: rgb(176, 181, 183);
+    }
+
+    .windah:hover {
+        scale: 1;
     }
 }
 
@@ -1322,6 +1449,10 @@ body {
         border-bottom: 3px solid rgb(91, 91, 91);
         background-color: rgb(176, 181, 183);
     }
+
+    .windah:hover {
+        scale: 1;
+    }
 }
 
 /* 320` */
@@ -1453,5 +1584,9 @@ body {
         border-right: 3px solid rgb(91, 91, 91);
         border-bottom: 3px solid rgb(91, 91, 91);
         background-color: rgb(176, 181, 183);
+    }
+
+    .windah:hover {
+        scale: 1;
     }
 }
