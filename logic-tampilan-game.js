@@ -1,5 +1,6 @@
+let modeBtn = document.querySelector(`.mode`);
 let btn1 = document.querySelector(`#btn-mode1`);
-let btn2 = document.querySelector(`#btn-mode2`);
+let btn2 = document.querySelector(`#btn-mode1`);
 let hamburger = document.querySelector(`.hamburger`);
 let text = document.querySelector(`.text`);
 let game = document.querySelector(`.game`);
@@ -20,7 +21,7 @@ let pauseRetry = document.querySelector(`.retry`);
 let pauseWall = document.querySelector(`.pause-wall`);
 
 // animasi masuk
-let UI = [btn1, btn2, hamburger, text, game];
+let UI = [modeBtn, hamburger, text, game];
 UI.forEach((e) => { e.style.pointerEvents = `none` });
 trailWindah.forEach((e) => { e.style.pointerEvents = `none` });
 

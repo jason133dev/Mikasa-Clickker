@@ -3,8 +3,9 @@ let hitung = document.querySelector(`#hitung`);
 let game = document.querySelector(`.game`);
 let logo = document.querySelector(`.logo`);
 let text = document.querySelector(`.text`);
+let modeBtn = document.querySelector(`.mode`);
 let btn1 = document.querySelector(`#btn-mode1`);
-let btn2 = document.querySelector(`#btn-mode2`);
+let btn2 = document.querySelector(`#btn-mode1`);
 let hamburger = document.querySelector(`.hamburger`);
 let portal = document.querySelector(`.portal`);
 let windahAnimasi = document.querySelector(`.windah-animasi`);
@@ -116,10 +117,9 @@ function pindah() {
     });
 
     // logic tampilan
-    let UI = [btn1, btn2, hamburger, text, leaderboard];
+    let UI = [modeBtn, hamburger, text, leaderboard];
     UI.forEach(el => el.classList.add(`hilang`));
     trailWindah.forEach((e) => { e.classList.remove(`hilang`) });
-    game.style.height = `89vh`;
 
     setTimeout(() => {
         bar.classList.remove(`hilang`);
