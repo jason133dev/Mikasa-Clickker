@@ -86,6 +86,7 @@
 - [x] **EXTRA:** Optimalisasi `LCP` dan `fetchpriority`
 - [x] **EXTRA:** Hilangkan `Tap Highlight` dan Image `callout`
 - [x] **EXTRA:** Update UI `game.html`
+- [x] **EXTRA:** Optimalisasi `CLS`
 
 ---
 

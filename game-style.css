@@ -337,6 +337,7 @@ body {
     z-index: 1005;
     pointer-events: none;
     opacity: 0.5;
+    will-change: transform, opacity;
 }
 
 /* trail windah */
@@ -352,6 +353,7 @@ body {
     scale: 0.8;
     filter: brightness(1000%);
     transition: all .2s ease-in-out;
+    will-change: transform, opacity;
 }
 
 /* logo */
@@ -435,6 +437,7 @@ body {
     width: 478px;
     height: 478px;
     animation: sinar 2s ease-in-out infinite alternate;
+    will-change: opacity;
 }
 
 .windah-animasi {
@@ -446,6 +449,7 @@ body {
     z-index: 1000;
     translate: 0px;
     animation: lempar 4s ease-in-out forwards;
+    will-change: transform, opacity;
 }
 
 .windah-animasi img {
@@ -533,6 +537,7 @@ body {
     height: 12px;
     transition: all 2s ease;
     z-index: -999;
+    will-change: transform;
 }
 
 .bar-shadow {
@@ -548,6 +553,7 @@ body {
     box-shadow: none;
     z-index: 0;
     transition: all .5s ease-in-out;
+    will-change: box-shadow;
 }
 
 /* bar kecil */
@@ -584,6 +590,7 @@ body {
     height: 12px;
     transition: all 2s ease;
     z-index: -999;
+    will-change: transform;
 }
 
 .bar-shadow-kecil {
@@ -599,6 +606,7 @@ body {
     box-shadow: none;
     z-index: -999;
     transition: all .5s ease-in-out;
+    will-change: box-shadow;
 }
 
 @keyframes blink {
@@ -693,6 +701,7 @@ body {
     border-bottom: 3px solid rgb(61, 123, 137);
     outline: 2px solid var(--warna-hitam-dasar);
     transition: all 0.2s ease;
+    will-change: box-shadow;
 }
 
 .btn-mode1:hover {
@@ -722,6 +731,7 @@ body {
     border-bottom: 3px solid rgb(154, 86, 86);
     outline: 2px solid var(--warna-hitam-dasar);
     transition: all 0.2s ease;
+    will-change: box-shadow;
 }
 
 .btn-mode2:hover {
@@ -900,6 +910,7 @@ body {
     background-color: rgb(39, 201, 77);
     transition: all 2s ease;
     animation: live .5s ease-in-out infinite alternate;
+    will-change: box-shadow;
 }
 
 @keyframes live {
@@ -941,6 +952,7 @@ body {
     user-select: none;
     cursor: pointer;
     z-index: 999;
+    will-change: transform, opacity, box-shadow;
 }
 
 .windah:hover {
