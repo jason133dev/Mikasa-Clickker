@@ -1,6 +1,6 @@
 let modeBtn = document.querySelector(`.mode`);
 let btn1 = document.querySelector(`#btn-mode1`);
-let btn2 = document.querySelector(`#btn-mode1`);
+let btn2 = document.querySelector(`#btn-mode2`);
 let hamburger = document.querySelector(`.hamburger`);
 let text = document.querySelector(`.text`);
 let game = document.querySelector(`.game`);
