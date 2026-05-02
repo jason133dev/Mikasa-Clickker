@@ -91,9 +91,10 @@
 ---
 
 ## 02-05-2026
-- [ ] Buat sistem `Dimension`
-- [ ] Variasi warna `live`
+- [x] Buat sistem `Dimension`
+- [x] Variasi warna `live`
 - [ ] Rancang perencanaan scene saat `persen` tertentu 
+- [x] Benerin `preload`
 
 ---
 

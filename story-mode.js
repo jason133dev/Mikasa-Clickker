@@ -12,7 +12,8 @@ let windahAnimasi = document.querySelector(`.windah-animasi`);
 let body = document.querySelector(`body`);
 let leaderboard = document.querySelector(`.leaderboard`);
 let live = document.querySelector(`.live`);
-
+let liveDot = document.querySelector(`.live-dot`);
+let liveText = document.querySelector(`#live-text`);
 // bar normal
 let bar = document.querySelector(`.bar`);
 let barInner = document.querySelector(`.bar-inner`);
@@ -73,6 +74,7 @@ function pindah() {
     // logic persen
     klik++;
     let rumus = Math.sqrt(klik);
+    console.log(rumus);
     persen = Math.min(rumus, 100);
     barStatus.innerHTML = persen.toFixed(1) + `%`;
     barStatusKecil.innerHTML = persen.toFixed(1) + `%`;
@@ -81,8 +83,31 @@ function pindah() {
     barInner.style.translate = `${posisiBarInner}%`;
     barInnerKecil.style.translate = `${posisiBarInner}%`;
 
-    if (persen >= 10) {
-        body.style.boxShadow = `0px 0px 160px 8px rgba(0,0,0,0.75) inset`;
+    if (persen <= 20) {
+        liveDot.style.backgroundColor = `rgb(39, 201, 77)`;
+        liveDot.style.animation = `stable .5s ease-in-out infinite alternate`;
+        liveText.innerHTML = `Dimension: Stable`;
+    } else if (persen <= 40) {
+        liveDot.style.backgroundColor = `rgb(201, 144, 39)`;
+        liveDot.style.animation = `disturbed .5s ease-in-out infinite alternate`;
+        liveText.innerHTML = `Dimension: Disturbed`;
+
+        body.style.animation = `getar-tipis .5s ease`;
+        setTimeout(() => {
+            body.style.animation = `none`;
+        }, 500);
+    } else if (persen <= 60) {
+        liveDot.style.backgroundColor = `rgb(201, 144, 39)`;
+        liveDot.style.animation = `unstable .5s ease-in-out infinite alternate`;
+        liveText.innerHTML = `Dimension: Unstable`;
+    } else if (persen <= 80) {
+        liveDot.style.backgroundColor = `rgb(201, 39, 39)`;
+        liveDot.style.animation = `critical .5s ease-in-out infinite alternate`;
+        liveText.innerHTML = `Dimension: Critical`;
+    } else {
+        liveDot.style.backgroundColor = `rgb(158, 39, 201)`;
+        liveDot.style.animation = `collapsing .5s ease-in-out infinite alternate`;
+        liveText.innerHTML = `Dimension: Collapsing`;
     }
 
     // logic tampilan

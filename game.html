@@ -9,13 +9,15 @@
     <link rel="icon" href="Asset/windah.png">
 
     <!-- preload script -->
-    <link rel="modulepreload" href="./story-mode.js">
-    <link rel="modulepreload" href="./timer-mode.js">
+    <link rel="modulepreload" href="./story-mode.js" fetchpriority="low">
+    <link rel="modulepreload" href="./timer-mode.js" fetchpriority="low">
+    <link rel="modulepreload" href="./logic-tampilan-game.js" fetchpriority="high">
 
     <!-- asset -->
-     <link rel="preload" href="Asset/windah.png">
-     <link rel="preload" href="Asset/portal larry.png">
-     <link rel="preload" href="Asset/Mikasa Clickker.png">
+     <link rel="preload" fetchpriority="high" href="game-style.css" as="style">
+     <link rel="preload" fetchpriority="high" href="Asset/windah.png" as="image">
+     <link rel="preload" fetchpriority="high" href="Asset/portal larry1.png" as="image">
+     <link rel="preload" fetchpriority="high" href="PixelifySans-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
 </head>
 
 <body class="smooth">
@@ -84,12 +86,12 @@
 
         <!-- portal -->
         <div class="portal">
-            <img src="Asset/portal larry1.png" fetchpriority="high" id="portal">
+            <img src="Asset/portal larry1.png" id="portal">
         </div>
 
         <!-- windah-animasi -->
         <div class="windah-animasi">
-            <img src="Asset/windah.png" fetchpriority="high">
+            <img src="Asset/windah.png">
         </div>
 
         <!-- bar -->
@@ -162,7 +164,7 @@
 
             <!-- windah -->
             <div class="windah">
-                <img src="Asset/windah.png" fetchpriority="high">
+                <img src="Asset/windah.png">
             </div>
 
             <!-- trail windah -->
@@ -184,11 +186,11 @@
     <!-- live -->
     <div class="live hilang smooth">
         <div class="live-dot"></div>
-        <p>Dimension: Stable</p>
+        <p id="live-text">Dimension: Stable</p>
     </div>
 
     <!-- Logic -->
-    <script src="trail.js" type="module"></script>
+    <script src="trail.js" type="module" fetchpriority="low"></script>
     <script src="logic-tampilan-game.js" type="module"></script>
 </body>
 
