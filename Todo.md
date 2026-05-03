@@ -98,6 +98,12 @@
 
 ---
 
+## 03-05-2026
+- [ ] Rancang perencanaan scene saat `persen` tertentu
+
+---
+
+
 # Backlog
 
 ### [LOGIC] Gameplay Logic
