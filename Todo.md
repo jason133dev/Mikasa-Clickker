@@ -8,8 +8,6 @@
 
 ## 20-04-2026
 
-- [ ] ~~Setiap `.persen` tertentu, munculkan **Special Scene**. Jika salah keputusan, set `.persen = 0%`~~
-- [ ] ~~Setiap `.persen` tertentu, `.bar` akan berubah warna~~
 - [x] Membuat white motion trail untuk **windah**
 - [x] Buat `.bar` mengeluarkan glow ketika `.windah` diklik
 - [x] Responsif `game.index` tahap awal (Masih Kacau kali)
@@ -55,7 +53,6 @@
 
 ## 26-04-2026 && 27-04-2026
 
-- [ ] ~~Ganti satuan `Story.html` dengan `dvh` untuk vertikal dan `%` untuk sumbu horisontal dan ganti `translate` jadi inset custom~~
 - [x] Ganti `Story.html` pakai `position: fixed;, nanti tes pakai satuan svh` COI
 
 ---
