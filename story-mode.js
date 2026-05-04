@@ -26,6 +26,9 @@ let barInnerKecil = document.querySelector(`.bar-inner-kecil`);
 let barStatusKecil = document.querySelector(`.bar-status-kecil`);
 let barShadowKecil = document.querySelector(`.bar-shadow-kecil`);
 
+// info
+let info = document.querySelector(`.info`);
+
 // pause
 let pause = document.querySelector(`.pause`);
 let pauseMenu = document.querySelector(`.pause-menu`);
@@ -111,7 +114,7 @@ function pindah() {
     }
 
     // logic tampilan
-    let UI = [modeBtn, hamburger, text, leaderboard];
+    let UI = [modeBtn, hamburger, text, leaderboard, info];
     UI.forEach(el => el.classList.add(`hilang`));
     trailWindah.forEach((e) => { e.classList.remove(`hilang`) });
 
@@ -180,6 +183,33 @@ function logicPauseRetry() {
 
     pauseMenu.classList.add(`hilang`);
     pauseWall.classList.add(`hilang`);
+
+    if (persen <= 20) {
+        liveDot.style.backgroundColor = `rgb(39, 201, 77)`;
+        liveDot.style.animation = `stable .5s ease-in-out infinite alternate`;
+        liveText.innerHTML = `Dimension: Stable`;
+    } else if (persen <= 40) {
+        liveDot.style.backgroundColor = `rgb(201, 144, 39)`;
+        liveDot.style.animation = `disturbed .5s ease-in-out infinite alternate`;
+        liveText.innerHTML = `Dimension: Disturbed`;
+
+        body.style.animation = `getar-tipis .5s ease`;
+        setTimeout(() => {
+            body.style.animation = `none`;
+        }, 500);
+    } else if (persen <= 60) {
+        liveDot.style.backgroundColor = `rgb(201, 144, 39)`;
+        liveDot.style.animation = `unstable .5s ease-in-out infinite alternate`;
+        liveText.innerHTML = `Dimension: Unstable`;
+    } else if (persen <= 80) {
+        liveDot.style.backgroundColor = `rgb(201, 39, 39)`;
+        liveDot.style.animation = `critical .5s ease-in-out infinite alternate`;
+        liveText.innerHTML = `Dimension: Critical`;
+    } else {
+        liveDot.style.backgroundColor = `rgb(158, 39, 201)`;
+        liveDot.style.animation = `collapsing .5s ease-in-out infinite alternate`;
+        liveText.innerHTML = `Dimension: Collapsing`;
+    }
 }
 
 function logicPausePlay() {

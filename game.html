@@ -14,35 +14,60 @@
     <link rel="modulepreload" href="./logic-tampilan-game.js" fetchpriority="high">
 
     <!-- asset -->
-     <link rel="preload" fetchpriority="high" href="game-style.css" as="style">
-     <link rel="preload" fetchpriority="high" href="Asset/windah.png" as="image">
-     <link rel="preload" fetchpriority="high" href="Asset/portal larry1.png" as="image">
-     <link rel="preload" fetchpriority="high" href="PixelifySans-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" fetchpriority="high" href="game-style.css" as="style">
+    <link rel="preload" fetchpriority="high" href="Asset/windah.png" as="image">
+    <link rel="preload" fetchpriority="high" href="Asset/portal larry1.png" as="image">
 </head>
 
 <body class="smooth">
+    <!-- trail -->
+    <div class="trail hilang"></div>
+    <div class="trail hilang"></div>
+    <div class="trail hilang"></div>
+    <div class="trail hilang"></div>
+    <div class="trail hilang"></div>
+    <div class="trail hilang"></div>
+    <div class="trail hilang"></div>
+    <div class="trail hilang"></div>
+    <div class="trail hilang"></div>
+    <div class="trail hilang"></div>
+    <div class="trail hilang"></div>
+    <div class="trail hilang"></div>
+    <div class="trail hilang"></div>
+    <div class="trail hilang"></div>
+    <div class="trail hilang"></div>
+    <div class="trail hilang"></div>
+    <div class="trail hilang"></div>
+    <div class="trail hilang"></div>
+    <div class="trail hilang"></div>
+    <div class="trail hilang"></div>
+
+    <!-- pause menu -->
+    <div class="pause-menu hilang">
+        <h1 id="pause-h1">Pause</h1>
+        <div class="container-pause-el">
+            <div class="home">
+                <img src="Asset/home1.png" fetchpriority="low">
+            </div>
+            <div class="play">
+                <img src="Asset/play1.png" fetchpriority="low">
+            </div>
+            <div class="retry">
+                <img src="Asset/retry1.png" fetchpriority="low">
+            </div>
+        </div>
+    </div>
+
+    <!-- pause wall -->
+    <div class="pause-wall hilang"></div>
+
+    <!-- container -->
     <div class="container">
-        <!-- trail -->
-        <div class="trail hilang"></div>
-        <div class="trail hilang"></div>
-        <div class="trail hilang"></div>
-        <div class="trail hilang"></div>
-        <div class="trail hilang"></div>
-        <div class="trail hilang"></div>
-        <div class="trail hilang"></div>
-        <div class="trail hilang"></div>
-        <div class="trail hilang"></div>
-        <div class="trail hilang"></div>
-        <div class="trail hilang"></div>
-        <div class="trail hilang"></div>
-        <div class="trail hilang"></div>
-        <div class="trail hilang"></div>
-        <div class="trail hilang"></div>
-        <div class="trail hilang"></div>
-        <div class="trail hilang"></div>
-        <div class="trail hilang"></div>
-        <div class="trail hilang"></div>
-        <div class="trail hilang"></div>
+
+        <!-- info -->
+        <div class="info hilang smooth">
+            <img src="Asset/info1.png">
+        </div>
 
         <!-- hamburger menu -->
         <button class="hamburger hilang smooth">
@@ -56,25 +81,6 @@
             <span></span>
             <span></span>
         </div>
-
-        <!-- pause menu -->
-        <div class="pause-menu hilang">
-            <h1 id="pause-h1">Pause</h1>
-            <div class="container-pause-el">
-                <div class="home">
-                    <img src="Asset/home1.png" fetchpriority="low">
-                </div>
-                <div class="play">
-                    <img src="Asset/play1.png" fetchpriority="low">
-                </div>
-                <div class="retry">
-                    <img src="Asset/retry1.png" fetchpriority="low">
-                </div>
-            </div>
-        </div>
-
-        <!-- pause wall -->
-        <div class="pause-wall hilang"></div>
 
         <!-- text -->
         <div class="text hilang smooth">
@@ -178,9 +184,9 @@
             <div class="trail-windah hilang"><img src="Asset/windah.png"></div>
             <div class="trail-windah hilang"><img src="Asset/windah.png"></div>
             <div class="trail-windah hilang"><img src="Asset/windah.png"></div>
-    </div>
 
-    <p id="timer">Time: <br>01:00</p>
+            <p id="timer">Time: <br>01:00</p>
+    </div>
     </section>
 
     <!-- live -->

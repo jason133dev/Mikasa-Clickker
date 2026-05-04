@@ -24,6 +24,9 @@ let barInnerKecil = document.querySelector(`.bar-inner-kecil`);
 let barStatusKecil = document.querySelector(`.bar-status-kecil`);
 let barShadowKecil = document.querySelector(`.bar-shadow-kecil`);
 
+// info
+let info = document.querySelector(`.info`);
+
 // pause
 let pause = document.querySelector(`.pause`);
 let pauseMenu = document.querySelector(`.pause-menu`);
@@ -117,7 +120,7 @@ function pindah() {
     });
 
     // logic tampilan
-    let UI = [modeBtn, hamburger, text, leaderboard];
+    let UI = [modeBtn, hamburger, text, leaderboard, info];
     UI.forEach(el => el.classList.add(`hilang`));
     trailWindah.forEach((e) => { e.classList.remove(`hilang`) });
 

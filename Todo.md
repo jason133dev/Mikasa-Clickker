@@ -100,6 +100,16 @@
 
 ---
 
+## 04-05-2026
+- [x] Buat icon `What's New` di `game.html`
+
+---
+
+## 05-05-2026
+- [ ] Buat tampilan `What's New` di `game.html`
+
+---
+
 
 # Backlog
 

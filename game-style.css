@@ -12,7 +12,7 @@
     --warna-hitam-dasar: rgb(54, 54, 54);
     --warna-abu-coret: rgb(107, 107, 107);
     --border-button: 2px rgb(30, 30, 30) solid;
-    --warna-hamburger: rgb(214, 214, 214);
+    --warna-hamburger: rgb(54, 54, 54);
     --warna-hitung: rgb(77, 77, 77);
     --warna-button: rgb(41, 41, 41);
 }
@@ -74,6 +74,55 @@ body {
 
 .smooth {
     transition: all 1s ease;
+}
+
+/* info */
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: 50px 40px;
+    width: 35px;
+    height: 32px;
+    padding: 1px;
+    color: var(--warna-button);
+    background-color: rgb(158, 185, 191);
+    border-left: 3px solid rgb(202, 237, 245);
+    border-top: 3px solid rgb(202, 237, 245);
+    border-right: 3px solid gray;
+    border-bottom: 3px solid gray;
+    outline: 2px solid var(--warna-hitam-dasar);
+    transition: all 0.2s ease;
+}
+
+.info img {
+    width: 24px;
+    height: 24px;
+}
+
+.info:hover {
+    transform: translateY(-2px);
+    color: #edefef;
+    background-color: rgb(94, 168, 185);
+    border-left: 3px solid rgb(142, 198, 211);
+    border-top: 3px solid rgb(142, 198, 211);
+    border-right: 3px solid rgb(59, 106, 116);
+    border-bottom: 3px solid rgb(59, 106, 116);
+}
+
+.info:active {
+    transform: translateY(4px);
+    border-left: 3px solid rgb(59, 106, 116);
+    border-top: 3px solid rgb(59, 106, 116);
+    border-right: 3px solid rgb(142, 198, 211);
+    border-bottom: 3px solid rgb(142, 198, 211);
+}
+
+.info:hover img {
+    filter: brightness(1000%);
 }
 
 /* hamburger */
@@ -168,8 +217,8 @@ body {
 
 .pause span {
     display: block;
-    width: 7.5px;
-    height: 20px;
+    width: 7px;
+    height: 19px;
     margin: 2px;
     background-color: var(--warna-hamburger);
 }
@@ -908,7 +957,7 @@ body {
     bottom: 4svh;
     margin: auto;
     color: var(--warna-hitam-dasar);
-    z-index: 1000;
+    z-index: 0;
 }
 
 .live-dot {
@@ -1187,6 +1236,19 @@ body {
         -moz-box-shadow: 0px 0px 157px -13px rgba(0, 0, 0, 0.44) inset;
     }
 
+    /* info */
+    .info {
+        translate: 20px 45px;
+        width: 25.97px;
+        height: 25.97px;
+    }
+
+    .info img {
+        width: 19.48px;
+        height: 19.48px;
+    }
+
+    /* hambuger */
     .hamburger {
         translate: -20px 45px;
         padding: .1px;
@@ -1338,6 +1400,19 @@ body {
         -moz-box-shadow: 0px 0px 157px -13px rgba(0, 0, 0, 0.44) inset;
     }
 
+    /* info */
+    .info {
+        translate: 20px 45px;
+        width: 25.97px;
+        height: 25.97px;
+    }
+
+    .info img {
+        width: 19.48px;
+        height: 19.48px;
+    }
+
+    /* hambuger */
     .hamburger {
         translate: -20px 45px;
         padding: .1px;
@@ -1489,6 +1564,19 @@ body {
         -moz-box-shadow: 0px 0px 157px -13px rgba(0, 0, 0, 0.44) inset;
     }
 
+    /* info */
+    .info {
+        translate: 20px 45px;
+        width: 25.97px;
+        height: 25.97px;
+    }
+
+    .info img {
+        width: 19.48px;
+        height: 19.48px;
+    }
+
+    /* hambuger */
     .hamburger {
         translate: -20px 45px;
         padding: .1px;
@@ -1640,6 +1728,19 @@ body {
         -moz-box-shadow: 0px 0px 157px -13px rgba(0, 0, 0, 0.44) inset;
     }
 
+    /* info */
+    .info {
+        translate: 20px 45px;
+        width: 25.97px;
+        height: 25.97px;
+    }
+
+    .info img {
+        width: 19.48px;
+        height: 19.48px;
+    }
+
+    /* hamburger */
     .hamburger {
         translate: -20px 45px;
         padding: .1px;

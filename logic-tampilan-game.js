@@ -11,6 +11,9 @@ let body = document.querySelector(`body`);
 let trailWindah = document.querySelectorAll(`.trail-windah`);
 let leaderboard = document.querySelector(`.leaderboard`);
 
+// info
+let info = document.querySelector(`.info`);
+
 // pause
 let pause = document.querySelector(`.pause`);
 let pauseH1 = document.querySelector(`#pause-h1`);
@@ -21,7 +24,7 @@ let pauseRetry = document.querySelector(`.retry`);
 let pauseWall = document.querySelector(`.pause-wall`);
 
 // animasi masuk
-let UI = [modeBtn, hamburger, text, game];
+let UI = [modeBtn, hamburger, text, game, info];
 UI.forEach((e) => { e.style.pointerEvents = `none` });
 trailWindah.forEach((e) => { e.style.pointerEvents = `none` });
 
