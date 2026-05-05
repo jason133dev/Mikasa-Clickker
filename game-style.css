@@ -76,6 +76,17 @@ body {
     transition: all 1s ease;
 }
 
+/* info side bar */
+.info-side-bar {
+    position: fixed;
+    left: 0;
+    width: 15rem;
+    height: 100dvh;
+    padding: 1rem;
+    background-color: red;
+    z-index: 20;
+}
+
 /* info */
 .info {
     display: flex;

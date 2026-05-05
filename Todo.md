@@ -106,7 +106,12 @@
 ---
 
 ## 05-05-2026
-- [ ] Buat tampilan `What's New` di `game.html`
+- [x] Buat tampilan awal `What's New` di `game.html`
+
+---
+
+## 06-05-2026
+- [ ] Sempurnakan tampilan `What's New` di `game.html`
 
 ---
 
