@@ -115,6 +115,13 @@
 
 ---
 
+## 08-05-2026
+- [ ] Ubah opacity `trail` jadi 1
+
+---
+
+
+
 
 # Backlog
 
