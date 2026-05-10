@@ -116,7 +116,7 @@
 ---
 
 ## 08-05-2026
-- [ ] Ubah opacity `trail` jadi 1
+- [x] Ubah opacity `trail` jadi 1
 
 ---
 
