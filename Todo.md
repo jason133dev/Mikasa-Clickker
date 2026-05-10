@@ -115,11 +115,15 @@
 
 ---
 
+## 08-05-2026
+- [ ] Ubah opacity `trail` jadi 1
+
+---
+
 ## 10-05-2026
 - [x] Buat logic hapus `trail.js` di hp
 
 ---
-
 
 # Backlog
 
