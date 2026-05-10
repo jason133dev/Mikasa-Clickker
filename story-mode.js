@@ -217,6 +217,7 @@ function logicPausePlay() {
     pauseWall.classList.toggle(`hilang`);
 }
 
+
 // export
 export function start() {
     windah.addEventListener(`click`, pindah);

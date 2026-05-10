@@ -55,7 +55,7 @@ setTimeout(() => {
 // trail
 let trailMuncul = await import(`./trail.js`);
 
-window.addEventListener(`click`, () => {
+window.addEventListener(`pointerover`, () => {
     if (window.innerWidth < 768) {
         trailMuncul.stop();
 

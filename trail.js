@@ -40,6 +40,8 @@ function trakkerMouse(e) {
 export function start() {
     window.addEventListener('mousemove', trakkerMouse);
 
+    cancelAnimationFrame(playTrail);
+
     trailAnimation();
 }
 
