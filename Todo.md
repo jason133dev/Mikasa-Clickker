@@ -115,6 +115,11 @@
 
 ---
 
+## 10-05-2026
+- [x] Buat logic hapus `trail.js` di hp
+
+---
+
 
 # Backlog
 

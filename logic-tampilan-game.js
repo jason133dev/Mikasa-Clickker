@@ -52,6 +52,18 @@ setTimeout(() => {
     portal.style.display = `none`;
 }, 5700);
 
+// trail
+let trailMuncul = await import(`./trail.js`);
+
+window.addEventListener(`click`, () => {
+    if (window.innerWidth < 768) {
+        trailMuncul.stop();
+
+    } else {
+        trailMuncul.start();
+    }
+})
+
 // mode
 let mode = await import(`./story-mode.js`);
 mode.start();
@@ -101,7 +113,7 @@ btn2.addEventListener(`click`, async () => {
     btn2.classList.remove(`pasif`);
     btn1.classList.add(`pasif`);
     btn1.classList.remove(`aktif2`);
-    
+
     pauseMenu.style.backgroundColor = `rgba(177, 106, 106, 0.66)`;
     pauseH1.style.backgroundColor = `rgb(165, 98, 98, 0.644)`;
 

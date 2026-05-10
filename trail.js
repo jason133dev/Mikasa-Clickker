@@ -1,18 +1,10 @@
 // trail
 let coords = { x: 0, y: 0 };
 let trail = document.querySelectorAll(`.trail`);
+let playTrail;
 trail.forEach((t) => {
     t.x = 0;
     t.y = 0;
-});
-
-window.addEventListener('mousemove', (e) => {
-    coords.x = e.clientX
-    coords.y = e.clientY
-
-    trail.forEach((t) => {
-        t.classList.remove(`hilang`);
-    })
 });
 
 function trailAnimation() {
@@ -31,7 +23,32 @@ function trailAnimation() {
         y += (nextTrail.y - y) * 0.3;
     });
 
-    requestAnimationFrame(trailAnimation);
+    playTrail = requestAnimationFrame(trailAnimation);
 }
 
-trailAnimation();
+// trakker mouse
+function trakkerMouse(e) {
+    coords.x = e.clientX
+    coords.y = e.clientY
+
+    trail.forEach((t) => {
+        t.classList.remove(`hilang`);
+    })
+}
+
+// export
+export function start() {
+    window.addEventListener('mousemove', trakkerMouse);
+
+    trailAnimation();
+}
+
+export function stop() {
+    window.removeEventListener('mousemove', trakkerMouse);
+
+    cancelAnimationFrame(playTrail);
+
+    trail.forEach((t) => {
+        t.classList.add(`hilang`);
+    })
+}
